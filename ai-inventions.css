@@ -1,231 +1,516 @@
-header{
-	/*font-family: Shrikhand;*/
-	width:100%;
-	border-bottom-style: solid;
-	border-color:#3d85c6;
-	text-align: center;
-	margin-bottom: 2%;
-	z-index: 1;
-	/*background-color:rgba(104, 198, 144, 0.5);
-	border-top-style: solid;
-	border-width:5px;
-	position: fixed;
-	opacity: 1.0;
-	transition: background-color 1.0s ease;
-	z-index: 1;
-	transition: opacity .5s ease-in-out;*/
+/* =========================================
+   AI INVENTIONS
+   Modern Product Discovery Website
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#categories_hbutton{
-	/*id for the hamburger button*/
-	border-radius: 50%;
-	background-color: #3d85c6;
-	color:whitesmoke;
-	font-size: 60px;
-	height: 80px;
-	width: 80px;
-	align-items: center;
-	justify-content: center;
+html {
+    scroll-behavior: smooth;
 }
-
-#categories{
-	/*padding-top:2%;*/
-	padding-bottom:2%;
-	text-align: center;
-	overflow: hidden;
-}
-
-#categories h1{
-
-}
-
-#categories button{
-	float:left;
-}
-
-.menu a{
-	/*these are the main buttons that come out of the categories menu*/
-	display:inline-block;
-	border-style: solid;
-	border-radius: 20px;
-	border-color: #3d85c6;
-	background-color: #cfe2f3;
-	margin: 2%;
-	padding: 2%;
-	font-size: 1.2em;
-	color:black;
-	/*transition: color .5s ease-in-out, background-color .5s ease-in-out;*/
-	/*text-decoration: none;*/
-}
-
-.menu a:hover{
-	background-color: #3d85c6;
-	color:whitesmoke;
-}
-
-.menu {
-	position: fixed;
-	top: 0;
-	left: -20%;
-	width: 20%;
-	height: 100%;
-	background-color: #cfe2f3;
-	/*color: #396140;*/
-	transition: all 0.3s ease-in-out;
-	z-index: 4;
-	text-align: left;
-}
-
-.menu.open {
-	left: 0;
-}
-
-.menu_close{
-	border-radius: 20px;
-	font-size: 50px;
-	position: fixed;
-	top: 0;
-	left: -50px;
-	/*width: 50px;
-	height: 50px;*/
-	background-color: #3d85c6;
-	color:whitesmoke;
-	transition: all 0.3s ease-in-out;
-	z-index: 4;
-}
-
-.menu_close.show{
-	left:22%;
-}
-
-/*.styled:active {
-  box-shadow:
-    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-}*/
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header,
+header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e4e8ef;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner,
+#categories {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header h1,
+#categories h1 {
+    color: #1267e5;
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.site-header nav a {
+    color: #354052;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+    color: #1267e5;
+}
+
+
+/* =========================================
+   HERO / GENERATOR
+========================================= */
+
+.hero {
+    padding: 80px 20px 55px;
     text-align: center;
+    background:
+        radial-gradient(circle at top, #eaf3ff 0%, #f6f8fb 60%);
 }
 
 .container {
-    max-width: 600px;
+    width: 100%;
+    max-width: 760px;
     margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background: #ffffff;
+    padding: 45px 35px;
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(27, 50, 82, 0.10);
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
 
+.eyebrow {
+    color: #1267e5;
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
 }
 
 .main_head {
-    color: #007BFF;
+    color: #172033;
+    font-size: clamp(2rem, 6vw, 3.6rem);
+    line-height: 1.08;
+    letter-spacing: -2px;
     margin-bottom: 20px;
 }
 
-.top_label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
+.hero-text {
+    max-width: 600px;
+    color: #657084;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
-#userInput {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
 
-#generateButton {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#categories_body{
-	/*this will be used as the body of the new interface*/
-	display:inline-block;
-
-}
-
-#categories_body.hide_element{
-	display: none;
-}
-
-#categories_body button{
-	border-style: solid;
-	border-radius: 20px;
-	border-color: #3d85c6;
-	background-color: #cfe2f3;
-	margin: 0.5%;
-	padding: 1%;
-	font-size: 1.2em;
-	color:black;
-}
-
-#categories_body button:hover{
-	background-color: #3d85c6;
-	color:whitesmoke;
-}
-
-#buy_now{
-	border-style: solid;
-	border-radius: 20px;
-	border-color: #3d85c6;
-	background-color: #cfe2f3;
-	padding: 2%;
-	margin: 0;
-	font-size: 1.2em;
-	color:black;
-	box-sizing: border-box;
-	text-decoration: none;
-}
-
-#buy_now:hover{
-	background-color: #3d85c6;
-	color:whitesmoke;
-}
+/* =========================================
+   GENERATOR OUTPUT
+========================================= */
 
 .output {
-   margin-bottom: 5%;
+    width: 100%;
+    background: #f7f9fc;
+    border: 1px solid #e1e6ed;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+    color: #303a4b;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
-.hide_element{
-	display: none;
+
+/* =========================================
+   GENERATE / CATEGORY BUTTONS
+========================================= */
+
+#categories_body {
+    width: 100%;
+    max-width: 1100px;
+    margin: 25px auto 0;
+    padding: 10px 20px 50px;
+    text-align: center;
 }
+
+#categories_body button,
+#generateButton {
+    appearance: none;
+    border: 1px solid #d5deea;
+    border-radius: 50px;
+    background: #ffffff;
+    padding: 13px 22px;
+    margin: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #263449;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(30, 55, 90, 0.06);
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+#categories_body button:hover,
+#generateButton:hover {
+    background: #1267e5;
+    border-color: #1267e5;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+#categories_body button:active,
+#generateButton:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   SHOP BUTTON
+========================================= */
+
+#buy_now,
+.shop-button {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    background: #1267e5;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 28px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(18, 103, 229, 0.25);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+#buy_now:hover,
+.shop-button:hover {
+    background: #0d55c2;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(18, 103, 229, 0.32);
+}
+
+
+/* IMPORTANT:
+   This must stay below the #buy_now styling.
+   Your JavaScript uses this class to hide elements.
+*/
+
+.hide_element,
+#buy_now.hide_element,
+#categories_body.hide_element {
+    display: none;
+}
+
+
+/* =========================================
+   PRODUCTS SECTION
+========================================= */
+
+.products-section {
+    padding: 70px 20px 40px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    color: #172033;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #657084;
+}
+
+
+/* =========================================
+   HOW IT WORKS
+========================================= */
+
+.how-it-works {
+    padding: 80px 20px;
+    background: #f6f8fb;
+}
+
+.steps {
+    max-width: 1050px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.step {
+    background: #ffffff;
+    border: 1px solid #e3e8ef;
+    border-radius: 18px;
+    padding: 32px 25px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(30, 55, 90, 0.06);
+}
+
+.step-number {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1267e5;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.step h3 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: #657084;
+}
+
+
+/* =========================================
+   TRUST SECTION
+========================================= */
+
+.trust-section {
+    padding: 75px 20px;
+    background: #172033;
+    color: #ffffff;
+    text-align: center;
+}
+
+.trust-section .container {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.trust-section h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.trust-section p {
+    color: #c5cfdd;
+    max-width: 650px;
+}
+
+
+/* =========================================
+   LOADING CIRCLE
+========================================= */
 
 #loading-circle {
-    border: 8px solid #3498db;
-    border-top: 8px solid #f0f0f0;
+    border: 6px solid #dce8f8;
+    border-top: 6px solid #1267e5;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-    margin-bottom: 20px;
+    width: 48px;
+    height: 48px;
+    animation: spin 0.8s linear infinite;
+    margin: 5px auto 25px;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-/*.output p {
-  font-size: 18px;
-	line-height: 1.5;
-  margin: 0 0 20px;
-  color: #333;
-}*/
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #101725;
+    color: #9ca9bc;
+    padding: 55px 20px 35px;
+    text-align: center;
+}
+
+.footer-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer h2 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+footer nav {
+    margin: 20px 0;
+}
+
+footer nav a {
+    color: #d5deeb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    color: #ffffff;
+}
+
+.affiliate-disclosure {
+    max-width: 650px;
+    margin: 25px auto;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   OLD MENU SUPPORT
+========================================= */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100%;
+    background: #ffffff;
+    transition: left 0.3s ease;
+    z-index: 2000;
+    padding-top: 70px;
+}
+
+.menu.open {
+    left: 0;
+}
+
+.menu a {
+    display: block;
+    margin: 10px;
+    padding: 14px;
+    color: #172033;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    background: #1267e5;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .header-inner,
+    #categories {
+        padding: 15px 18px;
+    }
+
+    .site-header h1,
+    #categories h1 {
+        font-size: 1.4rem;
+    }
+
+    .site-header nav {
+        gap: 12px;
+    }
+
+    .site-header nav a {
+        font-size: 0.82rem;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .container {
+        padding: 32px 20px;
+        border-radius: 16px;
+    }
+
+    .main_head {
+        letter-spacing: -1px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        text-align: center;
+    }
+
+    .step-number {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #categories_body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #categories_body button {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .site-header nav a:nth-child(3) {
+        display: none;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    #buy_now,
+    .shop-button {
+        max-width: 100%;
+    }
+}
