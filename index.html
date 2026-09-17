@@ -1,45 +1,253 @@
-<!-- Disclaimer: This page has been edited using ChatGPT, an AI language model created by OpenAI. The content may have been generated or modified by the AI, and the accuracy or relevance of the information cannot be guaranteed. Please verify any critical information independently. -->
-<html>
-	<head>
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HCXW3MEY15"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
 
-  gtag('config', 'G-HCXW3MEY15');
-</script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
 
-		<link rel="stylesheet" media="screen" href="ai-inventions.css">
-		<script type="text/javascript" src="ai-inventions.js"></script>
-	</head>
-	<body>
-		<header>
-			<div id=categories>
-				<!--<button id=categories_hbutton>&#9776;</button>-->
-				<h1>AI Inventions</h1>
-			</div>
-		</header>
-		<!--<div class="menu" id="sidebar">
-			<a href="4ardasd.html">Beauty, kitchen and outdoor gear</a>
-			<a href="workingout-gardening.html">Working out and gardening</a>
-			<a href="laundry room and auto.html">Laundry room and auto</a>
-			<a href="bathroom_school.html">Bathroom and school</a>
-			<a href="bedroom_workplace.html">Bedroom and workplace</a>
-		</div>
-		<div class="menu_close">
-			X
-		</div>-->
-		<div class="container">
-        	<h1 class="main_head">A Useful Invention Generator</h1>
-        	<div class="output" id="output">Brought to you from a site built with the help of artificial intelligence.</div>
-        	<div id="loading-circle" class="hide_element"></div>
-        	<a id="buy_now" class="hide_element">Buy now.</a>
-    	</div>
-    	<div id="categories_body">
-    	</div>
-    	
-	</body>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCXW3MEY15"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-HCXW3MEY15');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover useful products and creative invention ideas with AI Inventions."
+    >
+
+    <title>AI Inventions | Discover Useful Products</title>
+
+    <link rel="stylesheet" href="ai-inventions.css">
+
+    <script src="ai-inventions.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <h1>AI Inventions</h1>
+
+            <nav aria-label="Main navigation">
+                <a href="#generator">Generate</a>
+                <a href="#products">Products</a>
+                <a href="#how-it-works">How It Works</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="generator">
+
+            <div class="container">
+
+                <p class="eyebrow">AI-Powered Product Discovery</p>
+
+                <h2 class="main_head">
+                    Discover Something You Didn't Know You Needed
+                </h2>
+
+                <p class="hero-text">
+                    Explore useful invention ideas and discover products
+                    that can make everyday life a little easier.
+                </p>
+
+
+                <!-- Existing generator output -->
+                <div
+                    class="output"
+                    id="output"
+                    aria-live="polite"
+                >
+                    Generate an idea and see what AI comes up with.
+                </div>
+
+
+                <!-- Existing loading animation -->
+                <div
+                    id="loading-circle"
+                    class="hide_element"
+                    aria-label="Loading"
+                ></div>
+
+
+                <!-- Existing purchase link -->
+                <a
+                    id="buy_now"
+                    class="hide_element shop-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Shop This Product
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- GENERATED PRODUCT CATEGORIES -->
+        <section
+            id="products"
+            class="products-section"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Discover
+                </p>
+
+                <h2>
+                    Find Your Next Useful Product
+                </h2>
+
+                <p>
+                    Browse ideas generated for everyday life,
+                    hobbies, home projects and more.
+                </p>
+
+            </div>
+
+
+            <!-- Your JavaScript can continue filling this -->
+            <div id="categories_body"></div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+        <section
+            id="how-it-works"
+            class="how-it-works"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Simple &amp; Fun
+                </p>
+
+                <h2>
+                    How AI Inventions Works
+                </h2>
+
+            </div>
+
+
+            <div class="steps">
+
+                <article class="step">
+
+                    <span class="step-number">1</span>
+
+                    <h3>Generate</h3>
+
+                    <p>
+                        Let AI come up with an interesting
+                        or useful invention idea.
+                    </p>
+
+                </article>
+
+
+                <article class="step">
+
+                    <span class="step-number">2</span>
+
+                    <h3>Discover</h3>
+
+                    <p>
+                        See products related to the idea
+                        that you may find useful.
+                    </p>
+
+                </article>
+
+
+                <article class="step">
+
+                    <span class="step-number">3</span>
+
+                    <h3>Shop</h3>
+
+                    <p>
+                        If you find something you like,
+                        follow the product link to learn more.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRUST SECTION -->
+        <section class="trust-section">
+
+            <div class="container">
+
+                <h2>
+                    Built for Curious People
+                </h2>
+
+                <p>
+                    AI Inventions combines artificial intelligence
+                    with product discovery to help you find
+                    interesting products, clever ideas and
+                    useful solutions.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <h2>AI Inventions</h2>
+
+            <p>
+                Discover. Imagine. Shop.
+            </p>
+
+            <nav aria-label="Footer navigation">
+                <a href="privacy/">Privacy</a>
+                <a href="#how-it-works">How It Works</a>
+            </nav>
+
+            <p class="affiliate-disclosure">
+                Some links on this website may be affiliate links.
+                If you make a purchase through one of these links,
+                AI Inventions may earn a commission at no additional
+                cost to you.
+            </p>
+
+            <p>
+                &copy; 2026 AI Inventions. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
 </html>
