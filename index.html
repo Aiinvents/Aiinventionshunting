@@ -2,7 +2,12 @@
 <html lang="en">
 
 <head>
+    <script src="ai-inventions.js" defer></script>
     <meta charset="UTF-8">
+    <script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCXW3MEY15"></script>
@@ -43,26 +48,31 @@
     <div class="fashion-layout">
 
         <!-- MODEL AREA -->
-        <div class="model-panel">
+        <div class="model-stage">
 
-            <div class="model-stage">
+    <model-viewer
+        id="female-model"
+        src="woman.glb"
+        alt="Interactive 3D female fashion model"
+        camera-controls
+        auto-rotate
+        auto-rotate-delay="1500"
+        rotation-per-second="20deg"
+        shadow-intensity="1"
+        exposure="1"
+        touch-action="pan-y">
 
-                <!--
-                    We will replace this placeholder with the
-                    interactive female model.
-                -->
-                <div class="model-placeholder">
-                    <span>3D</span>
-                    <p>Female Model Coming Next</p>
-                </div>
-
-            </div>
-
-            <p class="model-help">
-                Your interactive model will appear here.
-            </p>
-
+        <div slot="poster" class="model-loading">
+            Loading model...
         </div>
+
+    </model-viewer>
+
+</div>
+
+<p class="model-help">
+    ↔ Drag to rotate • Pinch to zoom
+</p>
 
 
         <!-- OUTFIT CONTROLS -->
