@@ -514,3 +514,205 @@ footer nav a:hover {
         max-width: 100%;
     }
 }
+/* =========================================================
+   AI FASHION GENERATOR
+========================================================= */
+
+.fashion-generator {
+    max-width: 1150px;
+    margin: 45px auto;
+    padding: 35px 20px;
+}
+
+.fashion-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fashion-heading h2 {
+    margin: 5px 0 10px;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.fashion-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.model-panel,
+.outfit-panel {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.model-stage {
+    min-height: 520px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at center,
+            #ffffff 0%,
+            #f5f6f8 60%,
+            #eceef2 100%
+        );
+    overflow: hidden;
+}
+
+.model-placeholder {
+    width: 220px;
+    height: 420px;
+    border-radius: 120px 120px 40px 40px;
+    background: #e7e9ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.model-placeholder span {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.model-placeholder p {
+    max-width: 150px;
+}
+
+.model-help {
+    text-align: center;
+    margin-top: 15px;
+    opacity: 0.7;
+}
+
+.outfit-label {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.style-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.style-buttons button {
+    border: 1px solid #d9dce1;
+    background: #ffffff;
+    padding: 13px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.style-buttons button:hover {
+    transform: translateY(-2px);
+    border-color: #111111;
+}
+
+.style-buttons button.selected {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+}
+
+.generate-outfit-button {
+    width: 100%;
+    border: 0;
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 14px;
+    background: #111111;
+    color: #ffffff;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.generate-outfit-button:hover {
+    transform: translateY(-2px);
+}
+
+.generated-outfit {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.generated-outfit h3 {
+    margin-top: 0;
+}
+
+.outfit-items {
+    display: grid;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.outfit-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+}
+
+.item-icon {
+    font-size: 1.7rem;
+}
+
+.outfit-item small {
+    font-size: 0.7rem;
+    font-weight: 700;
+    opacity: 0.55;
+}
+
+.outfit-item p {
+    margin: 2px 0 0;
+    font-weight: 600;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .fashion-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .model-stage {
+        min-height: 430px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .fashion-generator {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .model-panel,
+    .outfit-panel {
+        padding: 16px;
+    }
+
+    .style-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
