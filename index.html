@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+    <script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+}
+    </script>
     <script src="ai-inventions.js" defer></script>
     <meta charset="UTF-8">
     <script
@@ -48,25 +56,23 @@
     <div class="fashion-layout">
 
         <!-- MODEL AREA -->
-        <div class="model-stage">
+<div class="model-panel">
 
-    <div id="fashion-3d-viewer"></div>
+    <div class="model-stage">
+        <div id="fashion-3d-viewer"></div>
+    </div>
 
-<div class="viewer-controls">
-    <button type="button" id="toggle-shirt">
-        👕 Shirt On / Off
-    </button>
+    <p class="model-help">
+        ↔ Drag to rotate • Pinch to zoom
+    </p>
+
+    <div class="viewer-controls">
+        <button type="button" id="toggle-shirt">
+            👕 Shirt On / Off
+        </button>
+    </div>
+
 </div>
-
-<p class="model-help">
-    ↔ Drag to rotate • Pinch to zoom
-</p>
-
-</div>
-
-<p class="model-help">
-    ↔ Drag to rotate • Pinch to zoom
-</p>
 
 
         <!-- OUTFIT CONTROLS -->
