@@ -1398,3 +1398,288 @@ window.addEventListener(
 
     }
 );
+/* =========================================================
+   AI FASHION OUTFIT GENERATOR
+========================================================= */
+
+const fashionStyles = {
+
+    casual: {
+        tops: [
+            "Relaxed T-Shirt",
+            "Cropped Knit Top",
+            "Oversized Sweatshirt"
+        ],
+        bottoms: [
+            "Straight-Leg Jeans",
+            "Cargo Pants",
+            "Denim Shorts"
+        ],
+        shoes: [
+            "White Sneakers",
+            "Platform Sneakers",
+            "Casual Slip-Ons"
+        ],
+        accessories: [
+            "Crossbody Bag",
+            "Simple Necklace",
+            "Shoulder Bag"
+        ]
+    },
+
+    business: {
+        tops: [
+            "Fitted Blazer",
+            "Button-Up Blouse",
+            "Tailored Vest"
+        ],
+        bottoms: [
+            "Tailored Trousers",
+            "Pencil Skirt",
+            "Wide-Leg Pants"
+        ],
+        shoes: [
+            "Classic Pumps",
+            "Loafers",
+            "Ankle Boots"
+        ],
+        accessories: [
+            "Structured Handbag",
+            "Minimalist Watch",
+            "Gold-Tone Necklace"
+        ]
+    },
+
+    streetwear: {
+        tops: [
+            "Oversized Graphic Tee",
+            "Cropped Hoodie",
+            "Bomber Jacket"
+        ],
+        bottoms: [
+            "Baggy Cargo Pants",
+            "Distressed Jeans",
+            "Parachute Pants"
+        ],
+        shoes: [
+            "Chunky Sneakers",
+            "High-Top Sneakers",
+            "Platform Trainers"
+        ],
+        accessories: [
+            "Mini Shoulder Bag",
+            "Baseball Cap",
+            "Statement Sunglasses"
+        ]
+    },
+
+    "date-night": {
+        tops: [
+            "Satin Top",
+            "Off-Shoulder Top",
+            "Fitted Bodysuit"
+        ],
+        bottoms: [
+            "Midi Skirt",
+            "Fitted Trousers",
+            "Mini Skirt"
+        ],
+        shoes: [
+            "Strappy Heels",
+            "Pointed Pumps",
+            "Heeled Sandals"
+        ],
+        accessories: [
+            "Clutch Bag",
+            "Statement Earrings",
+            "Delicate Necklace"
+        ]
+    },
+
+    athleisure: {
+        tops: [
+            "Cropped Athletic Top",
+            "Fitted Zip Jacket",
+            "Oversized Hoodie"
+        ],
+        bottoms: [
+            "High-Waisted Leggings",
+            "Joggers",
+            "Biker Shorts"
+        ],
+        shoes: [
+            "Running Sneakers",
+            "Training Shoes",
+            "Chunky Trainers"
+        ],
+        accessories: [
+            "Sports Cap",
+            "Belt Bag",
+            "Gym Tote"
+        ]
+    },
+
+    western: {
+        tops: [
+            "Western Button-Up",
+            "Fitted Tank Top",
+            "Denim Shirt"
+        ],
+        bottoms: [
+            "Bootcut Jeans",
+            "Denim Skirt",
+            "Flared Jeans"
+        ],
+        shoes: [
+            "Cowboy Boots",
+            "Western Ankle Boots",
+            "Leather Boots"
+        ],
+        accessories: [
+            "Western Belt",
+            "Cowboy Hat",
+            "Fringe Bag"
+        ]
+    },
+
+    y2k: {
+        tops: [
+            "Baby Tee",
+            "Cropped Tank",
+            "Graphic Crop Top"
+        ],
+        bottoms: [
+            "Low-Rise Cargo Pants",
+            "Mini Skirt",
+            "Wide-Leg Jeans"
+        ],
+        shoes: [
+            "Platform Sneakers",
+            "Chunky Sandals",
+            "Platform Boots"
+        ],
+        accessories: [
+            "Mini Bag",
+            "Tinted Sunglasses",
+            "Statement Necklace"
+        ]
+    },
+
+    formal: {
+        tops: [
+            "Elegant Satin Blouse",
+            "Structured Evening Top",
+            "Formal Bodysuit"
+        ],
+        bottoms: [
+            "Floor-Length Skirt",
+            "Tailored Formal Pants",
+            "Satin Midi Skirt"
+        ],
+        shoes: [
+            "Elegant Heels",
+            "Classic Pumps",
+            "Strappy Formal Sandals"
+        ],
+        accessories: [
+            "Evening Clutch",
+            "Statement Earrings",
+            "Elegant Necklace"
+        ]
+    }
+
+};
+
+
+let selectedFashionStyle = null;
+
+const styleButtons =
+    document.querySelectorAll(".style-buttons button");
+
+const generateOutfitButton =
+    document.getElementById("generate-outfit");
+
+
+styleButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        styleButtons.forEach(btn => {
+            btn.classList.remove("selected");
+        });
+
+        button.classList.add("selected");
+
+        selectedFashionStyle =
+            button.dataset.style;
+
+    });
+
+});
+
+
+function randomItem(items) {
+
+    return items[
+        Math.floor(Math.random() * items.length)
+    ];
+
+}
+
+
+if (generateOutfitButton) {
+
+    generateOutfitButton.addEventListener("click", () => {
+
+        if (!selectedFashionStyle) {
+
+            document.getElementById(
+                "selected-style"
+            ).textContent =
+                "Choose a style first.";
+
+            return;
+
+        }
+
+
+        const outfit =
+            fashionStyles[selectedFashionStyle];
+
+
+        document.getElementById(
+            "selected-style"
+        ).textContent =
+            selectedFashionStyle
+                .replace("-", " ")
+                .replace(/\b\w/g, letter =>
+                    letter.toUpperCase()
+                );
+
+
+        document.getElementById(
+            "outfit-top"
+        ).textContent =
+            randomItem(outfit.tops);
+
+
+        document.getElementById(
+            "outfit-bottom"
+        ).textContent =
+            randomItem(outfit.bottoms);
+
+
+        document.getElementById(
+            "outfit-shoes"
+        ).textContent =
+            randomItem(outfit.shoes);
+
+
+        document.getElementById(
+            "outfit-accessory"
+        ).textContent =
+            randomItem(outfit.accessories);
+
+    });
+
+}
