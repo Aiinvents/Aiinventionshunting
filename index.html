@@ -28,6 +28,12 @@
 
     <link rel="stylesheet" href="ai-inventions.css">
 
+    <!-- 3D Model Viewer -->
+    <script
+        type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+    </script>
+
     <script src="ai-inventions.js" defer></script>
 </head>
 
@@ -35,6 +41,7 @@
 
     <header class="site-header">
         <div class="header-inner">
+
             <h1>AI Inventions</h1>
 
             <nav aria-label="Main navigation">
@@ -42,6 +49,7 @@
                 <a href="#products">Products</a>
                 <a href="#how-it-works">How It Works</a>
             </nav>
+
         </div>
     </header>
 
@@ -53,7 +61,9 @@
 
             <div class="container">
 
-                <p class="eyebrow">AI-Powered Product Discovery</p>
+                <p class="eyebrow">
+                    AI-Powered Product Discovery
+                </p>
 
                 <h2 class="main_head">
                     Discover Something You Didn't Know You Needed
@@ -63,6 +73,111 @@
                     Explore useful invention ideas and discover products
                     that can make everyday life a little easier.
                 </p>
+
+
+                <!-- 3D FEMALE OUTFIT VIEWER -->
+                <section class="outfit-viewer">
+
+                    <h3>Try Different Outfits</h3>
+
+                    <p class="outfit-description">
+                        Choose an outfit below, then drag the figure
+                        to see it from any angle.
+                    </p>
+
+
+                    <!-- 3D MODEL -->
+                    <div class="model-container">
+
+                        <model-viewer
+                            id="female-model"
+                            src="models/woman-casual.glb"
+                            alt="3D female fashion model"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            exposure="1"
+                            interaction-prompt="auto">
+
+                            <div class="model-loading" slot="poster">
+                                Loading 3D Model...
+                            </div>
+
+                        </model-viewer>
+
+                    </div>
+
+
+                    <p class="rotate-message">
+                        ↔ Click and drag to rotate
+                    </p>
+
+
+                    <!-- OUTFIT OPTIONS -->
+                    <div class="outfit-options">
+
+                        <button
+                            type="button"
+                            class="outfit-button active"
+                            data-model="models/woman-casual.glb"
+                        >
+                            <span>👕</span>
+                            Casual
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="outfit-button"
+                            data-model="models/woman-business.glb"
+                        >
+                            <span>👔</span>
+                            Business
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="outfit-button"
+                            data-model="models/woman-athleisure.glb"
+                        >
+                            <span>🏃‍♀️</span>
+                            Athleisure
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="outfit-button"
+                            data-model="models/woman-outdoor.glb"
+                        >
+                            <span>🥾</span>
+                            Outdoor
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="outfit-button"
+                            data-model="models/woman-medical.glb"
+                        >
+                            <span>🩺</span>
+                            Medical
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="outfit-button"
+                            data-model="models/woman-chef.glb"
+                        >
+                            <span>👩‍🍳</span>
+                            Chef
+                        </button>
+
+                    </div>
+
+                </section>
 
 
                 <!-- Existing loading animation -->
@@ -112,7 +227,6 @@
             </div>
 
 
-            <!-- Your JavaScript can continue filling this -->
             <div id="categories_body"></div>
 
         </section>
@@ -237,6 +351,47 @@
         </div>
 
     </footer>
+
+
+    <!-- OUTFIT SWITCHING -->
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const model = document.getElementById("female-model");
+
+            const outfitButtons =
+                document.querySelectorAll(".outfit-button");
+
+
+            outfitButtons.forEach(function (button) {
+
+                button.addEventListener("click", function () {
+
+                    const newModel =
+                        button.getAttribute("data-model");
+
+
+                    // Change outfit/model
+                    model.src = newModel;
+
+
+                    // Remove active state
+                    outfitButtons.forEach(function (btn) {
+                        btn.classList.remove("active");
+                    });
+
+
+                    // Highlight selected outfit
+                    button.classList.add("active");
+
+                });
+
+            });
+
+        });
+
+    </script>
 
 </body>
 
