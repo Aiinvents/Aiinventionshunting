@@ -208,8 +208,10 @@ loader.load(
 
 
         fashionGroup.add(shirt);
+       shirt.visible = false;
 
     },
+   
 
     undefined,
 
@@ -392,3 +394,66 @@ fashionStyleButtons.forEach((button) => {
     });
 
 });
+/* =========================================================
+   GENERATE 3D OUTFIT
+========================================================= */
+
+const outfitGeneratorButton =
+    document.getElementById("generate-outfit");
+
+
+if (outfitGeneratorButton) {
+
+    outfitGeneratorButton.addEventListener("click", () => {
+
+        const productsForStyle =
+            fashionProducts.filter(
+                product =>
+                    product.style === selectedStyle &&
+                    product.model
+            );
+
+
+        if (productsForStyle.length === 0) {
+
+            console.log(
+                "No 3D garments available yet for:",
+                selectedStyle
+            );
+
+            return;
+        }
+
+
+        const randomProduct =
+            productsForStyle[
+                Math.floor(
+                    Math.random() *
+                    productsForStyle.length
+                )
+            ];
+
+
+        console.log(
+            "Loading 3D product:",
+            randomProduct.name
+        );
+
+
+        /*
+         * For our first test, shirt.glb is
+         * already loaded into the scene.
+         */
+
+        if (
+            randomProduct.model === "shirt.glb" &&
+            shirt
+        ) {
+
+            shirt.visible = true;
+
+        }
+
+    });
+
+}
