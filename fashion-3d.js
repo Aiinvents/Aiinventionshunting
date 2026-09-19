@@ -358,3 +358,36 @@ function animate() {
 }
 
 animate();
+/* =========================================================
+   FASHION STYLE CONTROLS
+========================================================= */
+
+let selectedStyle = "casual";
+
+const fashionStyleButtons =
+    document.querySelectorAll(".style-buttons button");
+
+
+fashionStyleButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        // Get selected category
+        selectedStyle = button.dataset.style;
+
+        // Remove highlight from all buttons
+        fashionStyleButtons.forEach((btn) => {
+            btn.classList.remove("selected");
+        });
+
+        // Highlight selected button
+        button.classList.add("selected");
+
+        console.log(
+            "Selected fashion style:",
+            selectedStyle
+        );
+
+    });
+
+});
