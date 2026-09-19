@@ -716,3 +716,14 @@ footer nav a:hover {
     }
 
 }
+#female-model {
+    width: 100%;
+    height: 520px;
+    background: transparent;
+}
+
+@media (max-width: 800px) {
+    #female-model {
+        height: 430px;
+    }
+}
