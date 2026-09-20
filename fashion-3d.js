@@ -194,9 +194,9 @@ loader.load(
          */
 
         shirt.scale.set(
+            1150,
             1000,
-            1000,
-            1000
+            1250
         );
 
 
