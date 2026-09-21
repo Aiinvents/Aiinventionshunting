@@ -83,7 +83,7 @@ const fashionLooks = {
     }
 };
 
-let selectedStyle = "bohemian";
+let selectedStyle = "null";
 
 const styleButtons =
     document.querySelectorAll(".style-buttons button");
@@ -188,26 +188,17 @@ styleButtons.forEach((button) => {
         });
 
         button.classList.add("selected");
-
-        showLook(selectedStyle);
     });
 });
 
 if (generateButton) {
 
-    generateButton.addEventListener(
-        "click",
-        () => showLook(selectedStyle)
-    );
+    generateButton.addEventListener("click", () => {
+
+        if (!selectedStyle) {
+            return;
+        }
+
+        showLook(selectedStyle);
+    });
 }
-
-const bohemianButton =
-    document.querySelector(
-        '[data-style="bohemian"]'
-    );
-
-if (bohemianButton) {
-    bohemianButton.classList.add("selected");
-}
-
-showLook("bohemian");
