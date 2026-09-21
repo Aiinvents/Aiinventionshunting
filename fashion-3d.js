@@ -178,7 +178,7 @@ loader.load(
 
 loader.load(
 
-    "./bohemian_top_master_v1.glb",
+    "./bohemian_top_master_v2.glb",
 
     function (gltf) {
 
