@@ -178,7 +178,7 @@ loader.load(
 
 loader.load(
 
-    "./shirt_fitted_v2.glb",
+    "./shirt_v4.glb",
 
     function (gltf) {
 
