@@ -202,7 +202,7 @@ loader.load(
 
         shirt.position.set(
             0,
-            5000,
+            1000,
             0
         );
 
