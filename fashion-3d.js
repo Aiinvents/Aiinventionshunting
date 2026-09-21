@@ -144,7 +144,7 @@ let shirt = null;
 
 loader.load(
 
-    "./woman_site_v2.glb",
+    "./woman_master.glb",
 
     function (gltf) {
 
@@ -178,7 +178,7 @@ loader.load(
 
 loader.load(
 
-    "./bohemian_top_v1.glb",
+    "./bohemian_top_master_v1.glb",
 
     function (gltf) {
 
