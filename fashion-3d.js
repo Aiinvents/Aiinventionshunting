@@ -178,7 +178,7 @@ loader.load(
 
 loader.load(
 
-    "./shirt_v5.glb",
+    "./bohemian_top_v1.glb",
 
     function (gltf) {
 
