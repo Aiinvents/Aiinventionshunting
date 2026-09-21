@@ -194,15 +194,15 @@ loader.load(
          */
 
         shirt.scale.set(
-            1000,
-            1000,
-            1000
+            1,
+            1,
+            1
         );
 
 
         shirt.position.set(
             0,
-            1000,
+            0,
             0
         );
 
