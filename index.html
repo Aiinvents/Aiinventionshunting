@@ -2,20 +2,8 @@
 <html lang="en">
 
 <head>
-    <script type="importmap">
-{
-    "imports": {
-        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
-    }
-}
-    </script>
     <script src="ai-inventions.js" defer></script>
     <meta charset="UTF-8">
-    <script
-    type="module"
-    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
-    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCXW3MEY15"></script>
@@ -59,18 +47,28 @@
 <div class="model-panel">
 
     <div class="model-stage">
-        <div id="fashion-3d-viewer"></div>
+        <div id="fashion-2d-viewer" class="fashion-2d-viewer">
+            <img id="fashion-base" class="fashion-layer base-layer"
+                 src="fashion-assets/base-woman.png"
+                 alt="Fashion mannequin">
+
+            <img id="fashion-bottom" class="fashion-layer clothing-layer"
+                 src="" alt="" hidden>
+
+            <img id="fashion-top" class="fashion-layer clothing-layer"
+                 src="" alt="" hidden>
+
+            <img id="fashion-shoes" class="fashion-layer clothing-layer"
+                 src="" alt="" hidden>
+
+            <img id="fashion-accessory" class="fashion-layer clothing-layer"
+                 src="" alt="" hidden>
+        </div>
     </div>
 
     <p class="model-help">
-        ↔ Drag to rotate • Pinch to zoom
+        Choose a style to build her outfit.
     </p>
-
-    <div class="viewer-controls">
-        <button type="button" id="toggle-shirt">
-            👕 Shirt On / Off
-        </button>
-    </div>
 
 </div>
 
@@ -192,17 +190,10 @@
     <link rel="stylesheet" href="ai-inventions.css">
 
     <!-- 3D Model Viewer -->
-    <script
-        type="module"
-        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
-    </script>
 
-    <script src="ai-inventions.js" defer></script>
+    
 </head>
-<script
-    type="module"
-    src="fashion-3d.js">
-</script>
+<script src="fashion-2d.js" defer></script>
 <body>
 
     <header class="site-header">
@@ -239,111 +230,6 @@
                     Explore useful invention ideas and discover products
                     that can make everyday life a little easier.
                 </p>
-
-
-                <!-- 3D FEMALE OUTFIT VIEWER -->
-                <section class="outfit-viewer">
-
-                    <h3>Try Different Outfits</h3>
-
-                    <p class="outfit-description">
-                        Choose an outfit below, then drag the figure
-                        to see it from any angle.
-                    </p>
-
-
-                    <!-- 3D MODEL -->
-                    <div class="model-container">
-
-                        <model-viewer
-                            id="female-model"
-                            src="models/woman-casual.glb"
-                            alt="3D female fashion model"
-                            camera-controls
-                            auto-rotate
-                            shadow-intensity="1"
-                            exposure="1"
-                            interaction-prompt="auto">
-
-                            <div class="model-loading" slot="poster">
-                                Loading 3D Model...
-                            </div>
-
-                        </model-viewer>
-
-                    </div>
-
-
-                    <p class="rotate-message">
-                        ↔ Click and drag to rotate
-                    </p>
-
-
-                    <!-- OUTFIT OPTIONS -->
-                    <div class="outfit-options">
-
-                        <button
-                            type="button"
-                            class="outfit-button active"
-                            data-model="models/woman-casual.glb"
-                        >
-                            <span>👕</span>
-                            Casual
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="outfit-button"
-                            data-model="models/woman-business.glb"
-                        >
-                            <span>👔</span>
-                            Business
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="outfit-button"
-                            data-model="models/woman-athleisure.glb"
-                        >
-                            <span>🏃‍♀️</span>
-                            Athleisure
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="outfit-button"
-                            data-model="models/woman-outdoor.glb"
-                        >
-                            <span>🥾</span>
-                            Outdoor
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="outfit-button"
-                            data-model="models/woman-medical.glb"
-                        >
-                            <span>🩺</span>
-                            Medical
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="outfit-button"
-                            data-model="models/woman-chef.glb"
-                        >
-                            <span>👩‍🍳</span>
-                            Chef
-                        </button>
-
-                    </div>
-
-                </section>
 
 
                 <!-- Existing loading animation -->
@@ -517,47 +403,6 @@
         </div>
 
     </footer>
-
-
-    <!-- OUTFIT SWITCHING -->
-    <script>
-
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const model = document.getElementById("female-model");
-
-            const outfitButtons =
-                document.querySelectorAll(".outfit-button");
-
-
-            outfitButtons.forEach(function (button) {
-
-                button.addEventListener("click", function () {
-
-                    const newModel =
-                        button.getAttribute("data-model");
-
-
-                    // Change outfit/model
-                    model.src = newModel;
-
-
-                    // Remove active state
-                    outfitButtons.forEach(function (btn) {
-                        btn.classList.remove("active");
-                    });
-
-
-                    // Highlight selected outfit
-                    button.classList.add("active");
-
-                });
-
-            });
-
-        });
-
-    </script>
 
 </body>
 
