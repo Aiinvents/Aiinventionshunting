@@ -144,7 +144,7 @@ let shirt = null;
 
 loader.load(
 
-    "./woman.glb",
+    "./woman_site.glb",
 
     function (gltf) {
 
@@ -178,7 +178,7 @@ loader.load(
 
 loader.load(
 
-    "./shirt.glb",
+    "./shirt_fitted.glb",
 
     function (gltf) {
 
