@@ -83,7 +83,7 @@ const fashionLooks = {
     }
 };
 
-let selectedStyle = "null";
+let selectedStyle = "bohemian";
 
 const styleButtons =
     document.querySelectorAll(".style-buttons button");
