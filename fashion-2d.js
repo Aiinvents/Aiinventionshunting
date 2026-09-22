@@ -12,7 +12,7 @@ const fashionLooks = {
         },
         bottom: {
             name: "Brown Lace-Up Shorts",
-            image: "fashion-assets/bohemian-shorts.png"
+            image: "fashion-assets/bohemian_shorts.png"
         },
         shoes: null,
         accessory: null
