@@ -12,7 +12,7 @@ const fashionLooks = {
         },
         bottom: {
     name: "Brown Lace-Up Shorts",
-    image: "https://raw.githubusercontent.com/Aiinvents/Aiinventionshunting/refs/heads/Areas-ofinterest/fashion-assets/bomenian_shorts.png"
+    image: "fashion-assets/bomenian_shorts.png"
 },
         shoes: null,
         accessory: null
