@@ -8,7 +8,7 @@ const fashionLooks = {
         label: "Bohemian",
         top: {
             name: "Teal Bohemian Halter Top",
-            image: ""
+            image: "fashion-assets/bohemian-top.png"
         },
         bottom: {
     name: "Brown Lace-Up Shorts",
