@@ -1,10 +1,13 @@
 /* =========================================================
    AI INVENTIONS - 2D FASHION LAYER SYSTEM
 
-   Random outfit system.
+   Random clothing generator for the avatar.
 
-   Every clothing PNG should use the same canvas size
-   and alignment so it fits the avatar correctly.
+   Current Bohemian setup:
+   - Random Tops
+   - Random Bottoms
+   - Random Accessories
+   - Shoes ready to add later
 ========================================================= */
 
 
@@ -22,106 +25,209 @@ const fashionLooks = {
 
         label: "Bohemian",
 
-        /*
-         * The original top stays here as the default.
-         * The topOptions array below is what gets randomized.
-         */
+
+        /* =================================================
+           DEFAULT TOP
+        ================================================= */
+
         top: {
-            name: "Teal Bohemian Halter Top",
+            name: "Bohemian Top",
             image: "fashion-assets/bohemian-top.png"
         },
 
-        /*
-         * ALL BOHEMIAN TOPS
-         *
-         * Every time Generate Outfit is pressed while
-         * Bohemian is selected, one of these is chosen.
-         */
+
+        /* =================================================
+           RANDOM BOHEMIAN TOPS
+        ================================================= */
+
         topOptions: [
 
             {
-                name: "Bohemian Top 1",
+                name: "Bohemian Top Original",
                 image: "fashion-assets/bohemian-top.png"
             },
 
             {
-                name: "Bohemian Top 2",
+                name: "Bohemian Top 1",
                 image: "fashion-assets/bohemian-top1.png"
             },
 
             {
-                name: "Bohemian Top 3",
+                name: "Bohemian Top 2",
                 image: "fashion-assets/bohemian-top2.png"
             },
 
             {
-                name: "Bohemian Top 4",
+                name: "Bohemian Top 3",
                 image: "fashion-assets/bohemian-top3.png"
             },
 
             {
-                name: "Bohemian Top 5",
+                name: "Bohemian Top 4",
                 image: "fashion-assets/bohemian-top4.png"
             },
 
             {
-                name: "Bohemian Top 6",
+                name: "Bohemian Top 5",
                 image: "fashion-assets/bohemian-top5.png"
             },
 
             {
-                name: "Bohemian Top 7",
+                name: "Bohemian Top 6",
                 image: "fashion-assets/bohemian-top6.png"
             },
 
             {
-                name: "Bohemian Top 8",
+                name: "Bohemian Top 7",
                 image: "fashion-assets/bohemian-top7.png"
             },
 
             {
-                name: "Bohemian Top 9",
+                name: "Bohemian Top 8",
                 image: "fashion-assets/bohemian-top8.png"
             },
 
             {
-                name: "Bohemian Top 10",
+                name: "Bohemian Top 9",
                 image: "fashion-assets/bohemian-top9.png"
             },
 
             {
-                name: "Bohemian Top 11",
+                name: "Bohemian Top 10",
                 image: "fashion-assets/bohemian-top10.png"
             }
 
         ],
 
-        /*
-         * CURRENT BOHEMIAN BOTTOM
-         */
+
+        /* =================================================
+           DEFAULT BOTTOM
+        ================================================= */
+
         bottom: {
-            name: "Brown Lace-Up Shorts",
+            name: "Bohemian Shorts",
             image: "fashion-assets/bohemian_shorts.png"
         },
 
-        /*
-         * We can add random bottoms here later.
-         */
-        bottomOptions: [],
+
+        /* =================================================
+           RANDOM BOHEMIAN BOTTOMS
+        ================================================= */
+
+        bottomOptions: [
+
+            {
+                name: "Bohemian Shorts",
+                image: "fashion-assets/bohemian_shorts.png"
+            },
+
+            {
+                name: "Bohemian Bottom 1",
+                image: "fashion-assets/boho-pants1.png"
+            },
+
+            {
+                name: "Bohemian Bottom 2",
+                image: "fashion-assets/boho-pants2.png"
+            },
+
+            {
+                name: "Bohemian Bottom 3",
+                image: "fashion-assets/boho-pants3.png"
+            },
+
+            {
+                name: "Bohemian Bottom 4",
+                image: "fashion-assets/boho-pants4.png"
+            },
+
+            {
+                name: "Bohemian Bottom 5",
+                image: "fashion-assets/boho-pants5.png"
+            },
+
+            {
+                name: "Bohemian Bottom 6",
+                image: "fashion-assets/boho-pants6.png"
+            },
+
+            {
+                name: "Bohemian Bottom 7",
+                image: "fashion-assets/boho-pants7.png"
+            },
+
+            {
+                name: "Bohemian Bottom 8",
+                image: "fashion-assets/boho-pants8.png"
+            },
+
+            {
+                name: "Bohemian Bottom 9",
+                image: "fashion-assets/boho-pants9.png"
+            }
+
+        ],
+
+
+        /* =================================================
+           BOHEMIAN SHOES
+
+           Leave empty until shoe PNGs are uploaded.
+        ================================================= */
 
         shoes: null,
 
-        /*
-         * Random shoes will go here later.
-         */
         shoeOptions: [],
+
+
+        /* =================================================
+           DEFAULT ACCESSORY
+        ================================================= */
 
         accessory: null,
 
-        /*
-         * Random accessories will go here later.
-         */
-        accessoryOptions: []
+
+        /* =================================================
+           RANDOM BOHEMIAN ACCESSORIES
+
+           IMPORTANT:
+           These spellings match the filenames shown
+           in your GitHub screenshot.
+        ================================================= */
+
+        accessoryOptions: [
+
+            {
+                name: "Bohemian Accessory 1",
+                image: "fashion-assets/Boho-accessories.png"
+            },
+
+            {
+                name: "Bohemian Accessory 2",
+                image: "fashion-assets/boho-accessories1.png"
+            },
+
+            {
+                name: "Bohemian Accessory 3",
+                image: "fashion-assets/boho-accesories2.png"
+            },
+
+            {
+                name: "Bohemian Accessory 4",
+                image: "fashion-assets/boho-accessories3.png"
+            },
+
+            {
+                name: "Bohemian Accessory 5",
+                image: "fashion-assets/boho-accesories4.png"
+            },
+
+            {
+                name: "Bohemian Accessory 6",
+                image: "fashion-assets/boho-accesories5.png"
+            }
+
+        ]
 
     },
 
@@ -313,24 +419,24 @@ const fashionLooks = {
 
 
 /* =========================================================
-   CURRENTLY SELECTED STYLE
+   CURRENT SELECTED FASHION STYLE
 ========================================================= */
 
 let selectedStyle = "bohemian";
 
 
 /* =========================================================
-   REMEMBER LAST RANDOM ITEMS
+   REMEMBER PREVIOUS RANDOM SELECTIONS
 
-   This keeps the same shirt from appearing twice
-   in a row whenever possible.
+   Prevents the same piece from being selected
+   twice in a row whenever possible.
 ========================================================= */
 
 const lastSelections = {};
 
 
 /* =========================================================
-   STYLE BUTTONS
+   FIND STYLE BUTTONS
 ========================================================= */
 
 const styleButtons =
@@ -338,7 +444,7 @@ const styleButtons =
 
 
 /* =========================================================
-   GENERATE OUTFIT BUTTON
+   FIND GENERATE OUTFIT BUTTON
 ========================================================= */
 
 const generateButton =
@@ -368,14 +474,13 @@ const layers = {
 
 /* =========================================================
    RANDOM ITEM FUNCTION
-
-   Picks a random piece of clothing.
-
-   It also tries to prevent the same piece from appearing
-   two times in a row.
 ========================================================= */
 
 function getRandomItem(style, type, items) {
+
+    /*
+     * Nothing available.
+     */
 
     if (!items || items.length === 0) {
         return null;
@@ -383,14 +488,17 @@ function getRandomItem(style, type, items) {
 
 
     /*
-     * If there is only one item,
-     * just return it.
+     * Only one piece available.
      */
 
     if (items.length === 1) {
         return items[0];
     }
 
+
+    /*
+     * Unique key for each clothing type.
+     */
 
     const selectionKey =
         `${style}-${type}`;
@@ -404,7 +512,7 @@ function getRandomItem(style, type, items) {
 
 
     /*
-     * Keep picking until we get something
+     * Keep choosing until the new item is
      * different from the previous item.
      */
 
@@ -421,7 +529,7 @@ function getRandomItem(style, type, items) {
 
 
     /*
-     * Remember what was picked.
+     * Remember selection.
      */
 
     lastSelections[selectionKey] =
@@ -434,19 +542,7 @@ function getRandomItem(style, type, items) {
 
 
 /* =========================================================
-   BUILD RANDOM LOOK
-
-   This is what will eventually randomize ALL clothing.
-
-   Right now Bohemian tops are populated.
-
-   Later we simply add:
-   - bottoms
-   - shoes
-   - accessories
-   - other fashion styles
-
-   The randomizer itself will NOT need to be rewritten.
+   BUILD RANDOM OUTFIT
 ========================================================= */
 
 function buildRandomLook(style) {
@@ -455,32 +551,41 @@ function buildRandomLook(style) {
         fashionLooks[style];
 
 
+    /*
+     * Stop if style does not exist.
+     */
+
     if (!baseLook) {
         return null;
     }
 
 
     /*
-     * Start with the normal/default pieces.
+     * Begin with default clothing.
      */
 
     const randomLook = {
 
-        label: baseLook.label,
+        label:
+            baseLook.label,
 
-        top: baseLook.top,
+        top:
+            baseLook.top,
 
-        bottom: baseLook.bottom,
+        bottom:
+            baseLook.bottom,
 
-        shoes: baseLook.shoes,
+        shoes:
+            baseLook.shoes,
 
-        accessory: baseLook.accessory
+        accessory:
+            baseLook.accessory
 
     };
 
 
     /* =====================================================
-       RANDOM TOP
+       RANDOMIZE TOP
     ===================================================== */
 
     if (
@@ -499,7 +604,7 @@ function buildRandomLook(style) {
 
 
     /* =====================================================
-       RANDOM BOTTOM
+       RANDOMIZE BOTTOM
     ===================================================== */
 
     if (
@@ -518,7 +623,7 @@ function buildRandomLook(style) {
 
 
     /* =====================================================
-       RANDOM SHOES
+       RANDOMIZE SHOES
     ===================================================== */
 
     if (
@@ -537,7 +642,7 @@ function buildRandomLook(style) {
 
 
     /* =====================================================
-       RANDOM ACCESSORY
+       RANDOMIZE ACCESSORY
     ===================================================== */
 
     if (
@@ -561,7 +666,7 @@ function buildRandomLook(style) {
 
 
 /* =========================================================
-   SET CLOTHING IMAGE LAYER
+   SET IMAGE LAYER
 ========================================================= */
 
 function setLayer(type, item) {
@@ -570,14 +675,18 @@ function setLayer(type, item) {
         layers[type];
 
 
+    /*
+     * Layer doesn't exist in HTML.
+     */
+
     if (!image) {
         return;
     }
 
 
     /*
-     * If there is no clothing item,
-     * hide that layer.
+     * No item available.
+     * Hide the layer.
      */
 
     if (
@@ -597,7 +706,7 @@ function setLayer(type, item) {
 
 
     /*
-     * Load clothing PNG.
+     * Set clothing PNG.
      */
 
     image.src =
@@ -605,8 +714,12 @@ function setLayer(type, item) {
 
 
     image.alt =
-        item.name;
+        item.name || type;
 
+
+    /*
+     * Display layer.
+     */
 
     image.hidden =
         false;
@@ -615,7 +728,7 @@ function setLayer(type, item) {
 
 
 /* =========================================================
-   UPDATE OUTFIT TEXT
+   UPDATE OUTFIT INFORMATION
 ========================================================= */
 
 function updateText(look) {
@@ -650,6 +763,10 @@ function updateText(look) {
         );
 
 
+    /*
+     * Selected style text.
+     */
+
     if (selected) {
 
         selected.textContent =
@@ -657,6 +774,10 @@ function updateText(look) {
 
     }
 
+
+    /*
+     * Top text.
+     */
 
     if (top) {
 
@@ -667,6 +788,10 @@ function updateText(look) {
     }
 
 
+    /*
+     * Bottom text.
+     */
+
     if (bottom) {
 
         bottom.textContent =
@@ -676,6 +801,10 @@ function updateText(look) {
     }
 
 
+    /*
+     * Shoes text.
+     */
+
     if (shoes) {
 
         shoes.textContent =
@@ -684,6 +813,10 @@ function updateText(look) {
 
     }
 
+
+    /*
+     * Accessory text.
+     */
 
     if (accessory) {
 
@@ -703,8 +836,7 @@ function updateText(look) {
 function showLook(style) {
 
     /*
-     * Build a fresh randomized outfit
-     * every time Generate Outfit is pressed.
+     * Generate randomized outfit.
      */
 
     const look =
@@ -717,7 +849,13 @@ function showLook(style) {
 
 
     /*
-     * Load all four clothing layers.
+     * IMPORTANT LAYER ORDER
+     *
+     * Bottom first.
+     * Top over bottom.
+     * Shoes.
+     * Accessories last so jewelry/belts/etc.
+     * appear above the clothing.
      */
 
     setLayer(
@@ -745,7 +883,7 @@ function showLook(style) {
 
 
     /*
-     * Update outfit description.
+     * Update text.
      */
 
     updateText(look);
@@ -765,17 +903,40 @@ styleButtons.forEach(
             () => {
 
                 /*
-                 * Remember which fashion style
-                 * the user selected.
+                 * Get style from:
+                 *
+                 * data-style="bohemian"
                  */
 
-                selectedStyle =
+                const style =
                     button.dataset.style;
 
 
                 /*
-                 * Remove selected styling
-                 * from every button.
+                 * Ignore invalid button.
+                 */
+
+                if (
+                    !style ||
+                    !fashionLooks[style]
+                ) {
+
+                    return;
+
+                }
+
+
+                /*
+                 * Save selected style.
+                 */
+
+                selectedStyle =
+                    style;
+
+
+                /*
+                 * Remove selected class
+                 * from every style button.
                  */
 
                 styleButtons.forEach(
@@ -790,7 +951,7 @@ styleButtons.forEach(
 
 
                 /*
-                 * Highlight selected button.
+                 * Highlight current button.
                  */
 
                 button.classList.add(
@@ -805,7 +966,7 @@ styleButtons.forEach(
 
 
 /* =========================================================
-   GENERATE OUTFIT
+   GENERATE OUTFIT BUTTON
 ========================================================= */
 
 if (generateButton) {
@@ -814,13 +975,17 @@ if (generateButton) {
         "click",
         () => {
 
+            /*
+             * Make sure a style exists.
+             */
+
             if (!selectedStyle) {
                 return;
             }
 
 
             /*
-             * Generate a NEW random outfit.
+             * Generate completely new random outfit.
              */
 
             showLook(
@@ -831,3 +996,49 @@ if (generateButton) {
     );
 
 }
+
+
+/* =========================================================
+   OPTIONAL FIRST OUTFIT
+
+   This creates a random Bohemian outfit automatically
+   when the page first loads.
+
+   If you DON'T want clothing to appear until the user
+   presses Generate Outfit, delete ONLY this section.
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        /*
+         * Select the Bohemian button visually
+         * if one exists.
+         */
+
+        const defaultButton =
+            document.querySelector(
+                '.style-buttons button[data-style="bohemian"]'
+            );
+
+
+        if (defaultButton) {
+
+            defaultButton.classList.add(
+                "selected"
+            );
+
+        }
+
+
+        /*
+         * Show first random Bohemian outfit.
+         */
+
+        showLook(
+            selectedStyle
+        );
+
+    }
+);
