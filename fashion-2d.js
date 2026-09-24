@@ -394,26 +394,128 @@ const fashionLooks = {
 
 
     /* =====================================================
-       SEXY
-    ===================================================== */
+   SEXY
+===================================================== */
 
-    sexy: {
+sexy: {
 
-        label: "Sexy",
+    label: "Sexy",
 
-        top: null,
-        topOptions: [],
 
-        bottom: null,
-        bottomOptions: [],
+    /* =================================================
+       DEFAULT TOP
+    ================================================= */
 
-        shoes: null,
-        shoeOptions: [],
+    top: {
+        name: "Sexy Top 5",
+        image: "fashion-assets/Sexy-top5.png"
+    },
 
-        accessory: null,
-        accessoryOptions: []
 
-    }
+    /* =================================================
+       RANDOM SEXY TOPS
+    ================================================= */
+
+    topOptions: [
+
+        {
+            name: "Sexy Top 5",
+            image: "fashion-assets/Sexy-top5.png"
+        },
+
+        {
+            name: "Sexy Top 6",
+            image: "fashion-assets/Sexy-top6.png"
+        },
+
+        {
+            name: "Sexy Top 7",
+            image: "fashion-assets/Sexy-top7.png"
+        },
+
+        {
+            name: "Sexy Top 8",
+            image: "fashion-assets/Sexy-top8.png"
+        },
+
+        {
+            name: "Sexy Top 9",
+            image: "fashion-assets/Sexy-top9.png"
+        }
+
+    ],
+
+
+    /* =================================================
+       DEFAULT BOTTOM
+    ================================================= */
+
+    bottom: {
+        name: "Sexy Bottom 1",
+        image: "fashion-assets/Sexy-bottoms1.png"
+    },
+
+
+    /* =================================================
+       RANDOM SEXY BOTTOMS
+    ================================================= */
+
+    bottomOptions: [
+
+        {
+            name: "Sexy Bottom 1",
+            image: "fashion-assets/Sexy-bottoms1.png"
+        },
+
+        {
+            name: "Sexy Bottom 2",
+            image: "fashion-assets/Sexy-bottoms2.png"
+        },
+
+        {
+            name: "Sexy Bottom 3",
+            image: "fashion-assets/Sexy-bottoms3.png"
+        },
+
+        {
+            name: "Sexy Bottom 4",
+            image: "fashion-assets/Sexy-bottoms4.png"
+        },
+
+        {
+            name: "Sexy Bottom 5",
+            image: "fashion-assets/Sexy-bottoms5.png"
+        },
+
+        {
+            name: "Sexy Bottom 6",
+            image: "fashion-assets/Sexy-bottoms6.png"
+        },
+
+        {
+            name: "Sexy Bottom 8",
+            image: "fashion-assets/Sexy-bottoms8.png"
+        }
+
+    ],
+
+
+    /* =================================================
+       SEXY SHOES
+    ================================================= */
+
+    shoes: null,
+
+    shoeOptions: [],
+
+
+    /* =================================================
+       SEXY ACCESSORIES
+    ================================================= */
+
+    accessory: null,
+
+    accessoryOptions: []
 
 };
 
