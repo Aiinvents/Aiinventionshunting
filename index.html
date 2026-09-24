@@ -2,407 +2,687 @@
 <html lang="en">
 
 <head>
-    <script src="ai-inventions.js" defer></script>
-    <meta charset="UTF-8">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCXW3MEY15"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <meta charset="UTF-8">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-        gtag('js', new Date());
-        gtag('config', 'G-HCXW3MEY15');
-    </script>
+  <meta
+    name="description"
+    content="Discover useful products and creative invention ideas with AI Inventions."
+  >
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Inventions | Discover Useful Products</title>
 
-    <meta
-        name="description"
-        content="Discover useful products and creative invention ideas with AI Inventions."
+  <link
+    rel="stylesheet"
+    href="ai-inventions.css"
+  >
+
+  <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-HCXW3MEY15"
+  ></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+
+    gtag(
+      "config",
+      "G-HCXW3MEY15"
+    );
+  </script>
+
+  <!-- MAIN PRODUCT JAVASCRIPT -->
+  <script
+    src="ai-inventions.js"
+    defer
+  ></script>
+
+  <!-- FASHION JAVASCRIPT -->
+  <script
+    src="fashion-2d.js"
+    defer
+  ></script>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <h1>
+        AI Inventions
+      </h1>
+
+      <nav aria-label="Main navigation">
+
+        <a href="#generator">
+          Generate
+        </a>
+
+        <a href="#fashion-generator">
+          Fashion
+        </a>
+
+        <a href="#products">
+          Products
+        </a>
+
+        <a href="#how-it-works">
+          How It Works
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main>
+
+
+    <!-- ===================================================
+         HERO
+    ==================================================== -->
+
+    <section
+      class="hero"
+      id="generator"
     >
 
-    <title>AI Inventions | Discover Useful Products</title>
-    <h2 class="main_head">
-    Discover Something You Didn't Know You Needed
-</h2>
+      <div class="container">
 
-<!-- AI FASHION EXPERIENCE -->
-<section class="fashion-generator" id="fashion-generator">
-
-    <div class="fashion-heading">
-        <p class="eyebrow">AI Fashion Discovery</p>
-        <h2>Build Your Look</h2>
-        <p>
-            Choose a style and discover a coordinated outfit.
+        <p class="eyebrow">
+          AI-Powered Product Discovery
         </p>
-    </div>
 
-    <div class="fashion-layout">
+        <h2 class="main_head">
+          Discover Something You Didn't Know You Needed
+        </h2>
 
-        <!-- MODEL AREA -->
-<div class="model-panel">
-
-    <div class="model-stage">
-        <div id="fashion-2d-viewer" class="fashion-2d-viewer">
-            <img id="fashion-base" class="fashion-layer base-layer"
-                 src="fashion-assets/base-woman.png"
-                 alt="Fashion mannequin">
-
-            <img id="fashion-bottom" class="fashion-layer clothing-layer"
-                 src="" alt="" hidden>
-
-            <img id="fashion-top" class="fashion-layer clothing-layer"
-                 src="" alt="" hidden>
-
-            <img id="fashion-shoes" class="fashion-layer clothing-layer"
-                 src="" alt="" hidden>
-
-            <img id="fashion-accessory" class="fashion-layer clothing-layer"
-                 src="" alt="" hidden>
-        </div>
-    </div>
-
-    <p class="model-help">
-        Choose a style to build her outfit.
-    </p>
-
-</div>
+        <p class="hero-text">
+          Explore useful invention ideas and discover products
+          that can make everyday life a little easier.
+        </p>
 
 
-        <!-- OUTFIT CONTROLS -->
-        <div class="outfit-panel">
+        <!-- Existing loading animation -->
 
-            <p class="outfit-label">
-                Choose Your Style
-            </p>
+        <div
+          id="loading-circle"
+          class="hide_element"
+          aria-label="Loading"
+        ></div>
 
-            <div class="style-buttons">
 
-    <button type="button" data-style="casual">
-        Casual
-    </button>
+        <!-- Existing purchase link -->
 
-    <button type="button" data-style="business">
-        Business
-    </button>
+        <a
+          id="buy_now"
+          class="hide_element shop-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Shop This Product
+        </a>
 
-    <button type="button" data-style="athletic">
-        Athletic
-    </button>
+      </div>
 
-    <button type="button" data-style="bohemian">
-        Bohemian
-    </button>
+    </section>
 
-    <button type="button" data-style="barbie">
-        Barbie
-    </button>
 
-    <button type="button" data-style="punk">
-        Punk
-    </button>
+    <!-- ===================================================
+         AI FASHION EXPERIENCE
+    ==================================================== -->
 
-    <button type="button" data-style="gothic">
-        Gothic
-    </button>
+    <section
+      class="fashion-generator"
+      id="fashion-generator"
+    >
 
-    <button type="button" data-style="hippy">
-        Hippy
-    </button>
+      <div class="fashion-heading">
 
-    <button type="button" data-style="sexy">
-        Sexy
-    </button>
+        <p class="eyebrow">
+          AI Fashion Discovery
+        </p>
+
+        <h2>
+          Build Your Look
+        </h2>
+
+        <p>
+          Choose a style and discover a coordinated outfit.
+        </p>
+
+      </div>
+
+
+      <div class="fashion-layout">
+
+
+        <!-- ===============================================
+             MODEL AREA
+        ================================================ -->
+
+        <div class="model-panel">
+
+          <div class="model-stage">
+
+            <div
+              id="fashion-2d-viewer"
+              class="fashion-2d-viewer"
+            >
+
+              <!-- BASE WOMAN -->
+
+              <img
+                id="fashion-base"
+                class="fashion-layer base-layer"
+                src="fashion-assets/base-woman.png"
+                alt="Fashion mannequin"
+              >
+
+
+              <!-- BOTTOM LAYER -->
+
+              <img
+                id="fashion-bottom"
+                class="fashion-layer clothing-layer"
+                src=""
+                alt=""
+                hidden
+              >
+
+
+              <!-- TOP LAYER -->
+
+              <img
+                id="fashion-top"
+                class="fashion-layer clothing-layer"
+                src=""
+                alt=""
+                hidden
+              >
+
+
+              <!-- SHOE LAYER -->
+
+              <img
+                id="fashion-shoes"
+                class="fashion-layer clothing-layer"
+                src=""
+                alt=""
+                hidden
+              >
+
+
+              <!-- ACCESSORY LAYER -->
+
+              <img
+                id="fashion-accessory"
+                class="fashion-layer clothing-layer"
+                src=""
+                alt=""
+                hidden
+              >
 
             </div>
+
+          </div>
+
+
+          <p class="model-help">
+            Choose a style to build her outfit.
+          </p>
+
+        </div>
+
+
+        <!-- ===============================================
+             OUTFIT CONTROLS
+        ================================================ -->
+
+        <div class="outfit-panel">
+
+          <p class="outfit-label">
+            Choose Your Style
+          </p>
+
+
+          <div class="style-buttons">
 
 
             <button
-                type="button"
-                id="generate-outfit"
-                class="generate-outfit-button"
+              type="button"
+              data-style="casual"
             >
-                ✨ Generate Outfit
+              Casual
             </button>
 
 
-            <!-- GENERATED OUTFIT -->
-            <div
-                id="generated-outfit"
-                class="generated-outfit"
-                aria-live="polite"
+            <button
+              type="button"
+              data-style="business"
             >
+              Business
+            </button>
 
-                <h3>Your Outfit</h3>
 
-                <p id="selected-style">
-                    Choose a style above to get started.
-                </p>
+            <button
+              type="button"
+              data-style="athletic"
+            >
+              Athletic
+            </button>
 
-                <div class="outfit-items">
 
-                    <article class="outfit-item">
-                        <span class="item-icon">👚</span>
-                        <div>
-                            <small>TOP</small>
-                            <p id="outfit-top">Waiting for selection</p>
-                        </div>
-                    </article>
+            <button
+              type="button"
+              data-style="bohemian"
+            >
+              Bohemian
+            </button>
 
-                    <article class="outfit-item">
-                        <span class="item-icon">👖</span>
-                        <div>
-                            <small>BOTTOM</small>
-                            <p id="outfit-bottom">Waiting for selection</p>
-                        </div>
-                    </article>
 
-                    <article class="outfit-item">
-                        <span class="item-icon">👠</span>
-                        <div>
-                            <small>SHOES</small>
-                            <p id="outfit-shoes">Waiting for selection</p>
-                        </div>
-                    </article>
+            <button
+              type="button"
+              data-style="barbie"
+            >
+              Barbie
+            </button>
 
-                    <article class="outfit-item">
-                        <span class="item-icon">👜</span>
-                        <div>
-                            <small>ACCESSORY</small>
-                            <p id="outfit-accessory">Waiting for selection</p>
-                        </div>
-                    </article>
+
+            <button
+              type="button"
+              data-style="punk"
+            >
+              Punk
+            </button>
+
+
+            <button
+              type="button"
+              data-style="gothic"
+            >
+              Gothic
+            </button>
+
+
+            <button
+              type="button"
+              data-style="hippy"
+            >
+              Hippy
+            </button>
+
+
+            <button
+              type="button"
+              data-style="sexy"
+            >
+              Sexy
+            </button>
+
+
+          </div>
+
+
+          <!-- GENERATE BUTTON -->
+
+          <button
+            type="button"
+            id="generate-outfit"
+            class="generate-outfit-button"
+          >
+            ✨ Generate Outfit
+          </button>
+
+
+          <!-- =============================================
+               GENERATED OUTFIT
+          ============================================== -->
+
+          <div
+            id="generated-outfit"
+            class="generated-outfit"
+            aria-live="polite"
+          >
+
+            <h3>
+              Your Outfit
+            </h3>
+
+
+            <p id="selected-style">
+              Choose a style above to get started.
+            </p>
+
+
+            <div class="outfit-items">
+
+
+              <!-- TOP -->
+
+              <article class="outfit-item">
+
+                <span class="item-icon">
+                  👚
+                </span>
+
+                <div>
+
+                  <small>
+                    TOP
+                  </small>
+
+                  <p id="outfit-top">
+                    Waiting for selection
+                  </p>
 
                 </div>
 
+              </article>
+
+
+              <!-- BOTTOM -->
+
+              <article class="outfit-item">
+
+                <span class="item-icon">
+                  👖
+                </span>
+
+                <div>
+
+                  <small>
+                    BOTTOM
+                  </small>
+
+                  <p id="outfit-bottom">
+                    Waiting for selection
+                  </p>
+
+                </div>
+
+              </article>
+
+
+              <!-- SHOES -->
+
+              <article class="outfit-item">
+
+                <span class="item-icon">
+                  👠
+                </span>
+
+                <div>
+
+                  <small>
+                    SHOES
+                  </small>
+
+                  <p id="outfit-shoes">
+                    Waiting for selection
+                  </p>
+
+                </div>
+
+              </article>
+
+
+              <!-- ACCESSORY -->
+
+              <article class="outfit-item">
+
+                <span class="item-icon">
+                  👜
+                </span>
+
+                <div>
+
+                  <small>
+                    ACCESSORY
+                  </small>
+
+                  <p id="outfit-accessory">
+                    Waiting for selection
+                  </p>
+
+                </div>
+
+              </article>
+
+
             </div>
 
+          </div>
+
         </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         GENERATED PRODUCT CATEGORIES
+    ==================================================== -->
+
+    <section
+      id="products"
+      class="products-section"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          Discover
+        </p>
+
+        <h2>
+          Find Your Next Useful Product
+        </h2>
+
+        <p>
+          Browse ideas generated for everyday life,
+          hobbies, home projects and more.
+        </p>
+
+      </div>
+
+
+      <div id="categories_body"></div>
+
+    </section>
+
+
+    <!-- ===================================================
+         HOW IT WORKS
+    ==================================================== -->
+
+    <section
+      id="how-it-works"
+      class="how-it-works"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          Simple &amp; Fun
+        </p>
+
+        <h2>
+          How AI Inventions Works
+        </h2>
+
+      </div>
+
+
+      <div class="steps">
+
+
+        <!-- STEP 1 -->
+
+        <article class="step">
+
+          <span class="step-number">
+            1
+          </span>
+
+          <h3>
+            Generate
+          </h3>
+
+          <p>
+            Let AI come up with an interesting
+            or useful invention idea.
+          </p>
+
+        </article>
+
+
+        <!-- STEP 2 -->
+
+        <article class="step">
+
+          <span class="step-number">
+            2
+          </span>
+
+          <h3>
+            Discover
+          </h3>
+
+          <p>
+            See products related to the idea
+            that you may find useful.
+          </p>
+
+        </article>
+
+
+        <!-- STEP 3 -->
+
+        <article class="step">
+
+          <span class="step-number">
+            3
+          </span>
+
+          <h3>
+            Shop
+          </h3>
+
+          <p>
+            If you find something you like,
+            follow the product link to learn more.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         TRUST SECTION
+    ==================================================== -->
+
+    <section class="trust-section">
+
+      <div class="container">
+
+        <h2>
+          Built for Curious People
+        </h2>
+
+        <p>
+          AI Inventions combines artificial intelligence
+          with product discovery to help you find
+          interesting products, clever ideas and
+          useful solutions.
+        </p>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <h2>
+        AI Inventions
+      </h2>
+
+      <p>
+        Discover. Imagine. Shop.
+      </p>
+
+
+      <nav aria-label="Footer navigation">
+
+        <a href="privacy/">
+          Privacy
+        </a>
+
+        <a href="#how-it-works">
+          How It Works
+        </a>
+
+      </nav>
+
+
+      <p class="affiliate-disclosure">
+        Some links on this website may be affiliate links.
+        If you make a purchase through one of these links,
+        AI Inventions may earn a commission at no additional
+        cost to you.
+      </p>
+
+
+      <p>
+        &copy; 2026 AI Inventions. All rights reserved.
+      </p>
 
     </div>
 
-</section>
+  </footer>
 
-    <link rel="stylesheet" href="ai-inventions.css">
-
-    <!-- 3D Model Viewer -->
-
-    
-</head>
-<script src="fashion-2d.js" defer></script>
-<body>
-
-    <header class="site-header">
-        <div class="header-inner">
-
-            <h1>AI Inventions</h1>
-
-            <nav aria-label="Main navigation">
-                <a href="#generator">Generate</a>
-                <a href="#products">Products</a>
-                <a href="#how-it-works">How It Works</a>
-            </nav>
-
-        </div>
-    </header>
-
-
-    <main>
-
-        <!-- HERO -->
-        <section class="hero" id="generator">
-
-            <div class="container">
-
-                <p class="eyebrow">
-                    AI-Powered Product Discovery
-                </p>
-
-                <h2 class="main_head">
-                    Discover Something You Didn't Know You Needed
-                </h2>
-
-                <p class="hero-text">
-                    Explore useful invention ideas and discover products
-                    that can make everyday life a little easier.
-                </p>
-
-
-                <!-- Existing loading animation -->
-                <div
-                    id="loading-circle"
-                    class="hide_element"
-                    aria-label="Loading"
-                ></div>
-
-
-                <!-- Existing purchase link -->
-                <a
-                    id="buy_now"
-                    class="hide_element shop-button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Shop This Product
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- GENERATED PRODUCT CATEGORIES -->
-        <section
-            id="products"
-            class="products-section"
-        >
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    Discover
-                </p>
-
-                <h2>
-                    Find Your Next Useful Product
-                </h2>
-
-                <p>
-                    Browse ideas generated for everyday life,
-                    hobbies, home projects and more.
-                </p>
-
-            </div>
-
-
-            <div id="categories_body"></div>
-
-        </section>
-
-
-        <!-- HOW IT WORKS -->
-        <section
-            id="how-it-works"
-            class="how-it-works"
-        >
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    Simple &amp; Fun
-                </p>
-
-                <h2>
-                    How AI Inventions Works
-                </h2>
-
-            </div>
-
-
-            <div class="steps">
-
-                <article class="step">
-
-                    <span class="step-number">1</span>
-
-                    <h3>Generate</h3>
-
-                    <p>
-                        Let AI come up with an interesting
-                        or useful invention idea.
-                    </p>
-
-                </article>
-
-
-                <article class="step">
-
-                    <span class="step-number">2</span>
-
-                    <h3>Discover</h3>
-
-                    <p>
-                        See products related to the idea
-                        that you may find useful.
-                    </p>
-
-                </article>
-
-
-                <article class="step">
-
-                    <span class="step-number">3</span>
-
-                    <h3>Shop</h3>
-
-                    <p>
-                        If you find something you like,
-                        follow the product link to learn more.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- TRUST SECTION -->
-        <section class="trust-section">
-
-            <div class="container">
-
-                <h2>
-                    Built for Curious People
-                </h2>
-
-                <p>
-                    AI Inventions combines artificial intelligence
-                    with product discovery to help you find
-                    interesting products, clever ideas and
-                    useful solutions.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div class="footer-inner">
-
-            <h2>AI Inventions</h2>
-
-            <p>
-                Discover. Imagine. Shop.
-            </p>
-
-            <nav aria-label="Footer navigation">
-                <a href="privacy/">Privacy</a>
-                <a href="#how-it-works">How It Works</a>
-            </nav>
-
-            <p class="affiliate-disclosure">
-                Some links on this website may be affiliate links.
-                If you make a purchase through one of these links,
-                AI Inventions may earn a commission at no additional
-                cost to you.
-            </p>
-
-            <p>
-                &copy; 2026 AI Inventions. All rights reserved.
-            </p>
-
-        </div>
-
-    </footer>
 
 </body>
 
