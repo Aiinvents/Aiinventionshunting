@@ -246,7 +246,7 @@ business: {
 
     bottom: {
         name: "Business Pant 1",
-        image: "fashion-assets/business-pant1.png"
+        image: "fashion-assets/Business-pant1.png"
     },
 
 
@@ -256,47 +256,47 @@ business: {
 
         {
             name: "Business Pant 1",
-            image: "fashion-assets/business-pant1.png"
+            image: "fashion-assets/Business-pant1.png"
         },
 
         {
             name: "Business Pant 2",
-            image: "fashion-assets/business-pant2.png"
+            image: "fashion-assets/Business-pant2.png"
         },
 
         {
             name: "Business Pant 3",
-            image: "fashion-assets/business-pant3.png"
+            image: "fashion-assets/Business-pant3.png"
         },
 
         {
             name: "Business Pant 4",
-            image: "fashion-assets/business-pant4.png"
+            image: "fashion-assets/Business-pant4.png"
         },
 
         {
             name: "Business Pant 5",
-            image: "fashion-assets/business-pant5.png"
+            image: "fashion-assets/Business-pant5.png"
         },
 
         {
             name: "Business Pant 6",
-            image: "fashion-assets/business-pant6.png"
+            image: "fashion-assets/Business-pant6.png"
         },
 
         {
             name: "Business Pant 7",
-            image: "fashion-assets/business-pant7.png"
+            image: "fashion-assets/Business-pant7.png"
         },
 
         {
             name: "Business Pant 8",
-            image: "fashion-assets/business-pant8.png"
+            image: "fashion-assets/Business-pant8.png"
         },
 
         {
             name: "Business Pant 9",
-            image: "fashion-assets/business-pant9.png"
+            image: "fashion-assets/Business-pant9.png"
         }
 
     ],
