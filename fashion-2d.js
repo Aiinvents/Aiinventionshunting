@@ -294,10 +294,6 @@ business: {
             image: "fashion-assets/Business-pant8.png"
         },
 
-        {
-            name: "Business Pant 9",
-            image: "fashion-assets/Business-pant9.png"
-        }
 
     ],
 
