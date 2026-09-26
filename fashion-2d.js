@@ -204,6 +204,7 @@ const fashionLooks = {
 
 
     /* =====================================================
+        /* =====================================================
        CASUAL
     ===================================================== */
 
@@ -211,21 +212,74 @@ const fashionLooks = {
 
         label: "Casual",
 
+        /* TOP */
+
         top: null,
+
         topOptions: [],
 
-        bottom: null,
-        bottomOptions: [],
+        /* DEFAULT BOTTOM */
+
+        bottom: {
+            name: "Casual Shorts 1",
+            image: "fashion-assets/Casual-shorts1.png"
+        },
+
+        /* RANDOM CASUAL BOTTOMS */
+
+        bottomOptions: [
+
+            {
+                name: "Casual Shorts 1",
+                image: "fashion-assets/Casual-shorts1.png"
+            },
+
+            {
+                name: "Casual Shorts 2",
+                image: "fashion-assets/Casual-shorts2.png"
+            },
+
+            {
+                name: "Casual Shorts 3",
+                image: "fashion-assets/Casual-shorts3.png"
+            },
+
+            {
+                name: "Casual Shorts 4",
+                image: "fashion-assets/Casual-shorts4.png"
+            },
+
+            {
+                name: "Casual Shorts 5",
+                image: "fashion-assets/Casual-shorts5.png"
+            },
+
+            {
+                name: "Casual Shorts 6",
+                image: "fashion-assets/Casual-shorts6.png"
+            },
+
+            {
+                name: "Casual Shorts 7",
+                image: "fashion-assets/Casual-shorts7.png"
+            }
+
+        ],
+
+        /* SHOES */
 
         shoes: null,
+
         shoeOptions: [],
 
+        /* ACCESSORIES */
+
         accessory: null,
+
         accessoryOptions: []
 
     },
-
-
+   
     /* =====================================================
    BUSINESS
 ===================================================== */
