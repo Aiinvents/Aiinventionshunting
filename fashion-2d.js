@@ -212,20 +212,54 @@ const fashionLooks = {
 
         label: "Casual",
 
-        /* TOP */
 
-        top: null,
+        /* =================================================
+           DEFAULT TOP
+        ================================================= */
 
-        topOptions: [],
+        top: {
+            name: "Casual Shirt 1",
+            image: "fashion-assets/Casual-shirt1.png"
+        },
 
-        /* DEFAULT BOTTOM */
+
+        /* =================================================
+           RANDOM CASUAL TOPS
+        ================================================= */
+
+        topOptions: [
+
+            {
+                name: "Casual Shirt 1",
+                image: "fashion-assets/Casual-shirt1.png"
+            },
+
+            {
+                name: "Casual Shirt 2",
+                image: "fashion-assets/Casual-shirt2.png"
+            },
+
+            {
+                name: "Casual Shirt 3",
+                image: "fashion-assets/Casual-shirt3.png"
+            }
+
+        ],
+
+
+        /* =================================================
+           DEFAULT BOTTOM
+        ================================================= */
 
         bottom: {
             name: "Casual Shorts 1",
             image: "fashion-assets/Casual-shorts1.png"
         },
 
-        /* RANDOM CASUAL BOTTOMS */
+
+        /* =================================================
+           RANDOM CASUAL BOTTOMS
+        ================================================= */
 
         bottomOptions: [
 
@@ -266,20 +300,25 @@ const fashionLooks = {
 
         ],
 
-        /* SHOES */
+
+        /* =================================================
+           CASUAL SHOES
+        ================================================= */
 
         shoes: null,
 
         shoeOptions: [],
 
-        /* ACCESSORIES */
+
+        /* =================================================
+           CASUAL ACCESSORIES
+        ================================================= */
 
         accessory: null,
 
         accessoryOptions: []
 
     },
-   
     /* =====================================================
    BUSINESS
 ===================================================== */
