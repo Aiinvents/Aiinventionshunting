@@ -227,28 +227,95 @@ const fashionLooks = {
 
 
     /* =====================================================
-       BUSINESS
-    ===================================================== */
+    /* =====================================================
+   BUSINESS
+===================================================== */
 
-    business: {
+business: {
 
-        label: "Business",
+    label: "Business",
 
-        top: null,
-        topOptions: [],
+    /* DEFAULT TOP */
 
-        bottom: null,
-        bottomOptions: [],
+    top: null,
 
-        shoes: null,
-        shoeOptions: [],
+    topOptions: [],
 
-        accessory: null,
-        accessoryOptions: []
 
+    /* DEFAULT BOTTOM */
+
+    bottom: {
+        name: "Business Pant 1",
+        image: "fashion-assets/business-pant1.png"
     },
 
 
+    /* RANDOM BUSINESS BOTTOMS */
+
+    bottomOptions: [
+
+        {
+            name: "Business Pant 1",
+            image: "fashion-assets/business-pant1.png"
+        },
+
+        {
+            name: "Business Pant 2",
+            image: "fashion-assets/business-pant2.png"
+        },
+
+        {
+            name: "Business Pant 3",
+            image: "fashion-assets/business-pant3.png"
+        },
+
+        {
+            name: "Business Pant 4",
+            image: "fashion-assets/business-pant4.png"
+        },
+
+        {
+            name: "Business Pant 5",
+            image: "fashion-assets/business-pant5.png"
+        },
+
+        {
+            name: "Business Pant 6",
+            image: "fashion-assets/business-pant6.png"
+        },
+
+        {
+            name: "Business Pant 7",
+            image: "fashion-assets/business-pant7.png"
+        },
+
+        {
+            name: "Business Pant 8",
+            image: "fashion-assets/business-pant8.png"
+        },
+
+        {
+            name: "Business Pant 9",
+            image: "fashion-assets/business-pant9.png"
+        }
+
+    ],
+
+
+    /* SHOES */
+
+    shoes: null,
+
+    shoeOptions: [],
+
+
+    /* ACCESSORIES */
+
+    accessory: null,
+
+    accessoryOptions: []
+
+},
     /* =====================================================
        ATHLETIC
     ===================================================== */
