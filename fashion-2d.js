@@ -227,7 +227,6 @@ const fashionLooks = {
 
 
     /* =====================================================
-    /* =====================================================
    BUSINESS
 ===================================================== */
 
@@ -235,14 +234,64 @@ business: {
 
     label: "Business",
 
-    /* DEFAULT TOP */
 
-    top: null,
+    /* =================================================
+       DEFAULT TOP
+    ================================================= */
 
-    topOptions: [],
+    top: {
+        name: "Business Shirt 2",
+        image: "fashion-assets/business-shirt2.png"
+    },
 
 
-    /* DEFAULT BOTTOM */
+    /* =================================================
+       RANDOM BUSINESS TOPS
+    ================================================= */
+
+    topOptions: [
+
+        {
+            name: "Business Shirt 2",
+            image: "fashion-assets/business-shirt2.png"
+        },
+
+        {
+            name: "Business Shirt 3",
+            image: "fashion-assets/business-shirt3.png"
+        },
+
+        {
+            name: "Business Shirt 4",
+            image: "fashion-assets/business-shirt4.png"
+        },
+
+        {
+            name: "Business Shirt 5",
+            image: "fashion-assets/business-shirt5.png"
+        },
+
+        {
+            name: "Business Shirt 6",
+            image: "fashion-assets/business-shirt6.png"
+        },
+
+        {
+            name: "Business Shirt 7",
+            image: "fashion-assets/business-shirt7.png"
+        },
+
+        {
+            name: "Business Shirt 8",
+            image: "fashion-assets/business-shirt8.png"
+        }
+
+    ],
+
+
+    /* =================================================
+       DEFAULT BOTTOM
+    ================================================= */
 
     bottom: {
         name: "Business Pant 1",
@@ -250,7 +299,9 @@ business: {
     },
 
 
-    /* RANDOM BUSINESS BOTTOMS */
+    /* =================================================
+       RANDOM BUSINESS BOTTOMS
+    ================================================= */
 
     bottomOptions: [
 
@@ -294,18 +345,26 @@ business: {
             image: "fashion-assets/Business-pant8.png"
         },
 
+        {
+            name: "Business Pant 9",
+            image: "fashion-assets/Business-pant9.png"
+        }
 
     ],
 
 
-    /* SHOES */
+    /* =================================================
+       BUSINESS SHOES
+    ================================================= */
 
     shoes: null,
 
     shoeOptions: [],
 
 
-    /* ACCESSORIES */
+    /* =================================================
+       BUSINESS ACCESSORIES
+    ================================================= */
 
     accessory: null,
 
