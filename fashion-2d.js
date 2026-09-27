@@ -533,28 +533,52 @@ business: {
     },
 
 
-    /* =====================================================
-       GOTHIC
-    ===================================================== */
-
     gothic: {
+    topOptions: [
+        {
+            name: "Gothic Shirt 1",
+            image: "fashion-assets/Gothic-shirt1.png"
+        },
+        {
+            name: "Gothic Shirt 2",
+            image: "fashion-assets/Gothic-shirt2.png"
+        },
+        {
+            name: "Gothic Shirt 3",
+            image: "fashion-assets/Gothic-shirt3.png"
+        },
+        {
+            name: "Gothic Shirt 4",
+            image: "fashion-assets/Gothic-shirt4.png"
+        },
+        {
+            name: "Gothic Shirt 5",
+            image: "fashion-assets/Gothic-shirt5.png"
+        },
+        {
+            name: "Gothic Shirt 6",
+            image: "fashion-assets/Gothic-shirt6.png"
+        },
+        {
+            name: "Gothic Shirt 7",
+            image: "fashion-assets/Gothic-shirt7.png"
+        },
+        {
+            name: "Gothic Shirt 8",
+            image: "fashion-assets/Gothic-shirt8.png"
+        },
+        {
+            name: "Gothic Shirt 9",
+            image: "fashion-assets/Gothic-shirt9.png"
+        }
+    ],
 
-        label: "Gothic",
+    bottomOptions: [],
 
-        top: null,
-        topOptions: [],
+    accessoryOptions: [],
 
-        bottom: null,
-        bottomOptions: [],
-
-        shoes: null,
-        shoeOptions: [],
-
-        accessory: null,
-        accessoryOptions: []
-
-    },
-
+    shoeOptions: []
+},
 
     /* =====================================================
        HIPPY
