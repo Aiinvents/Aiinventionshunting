@@ -532,8 +532,6 @@ business: {
 
     },
 
-
-    gothic: {
     gothic: {
     topOptions: [
         {
