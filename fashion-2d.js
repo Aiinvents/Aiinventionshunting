@@ -666,7 +666,11 @@ business: {
 
         accessory: null,
 
-        accessoryOptions: []
+        accessoryOptions: [
+           {name: "Gothic-accesories1",
+            image: "fashion-assets/Gothic-accesories1.png"
+           }
+        ]
 
     },
 
