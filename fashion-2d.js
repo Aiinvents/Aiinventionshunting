@@ -534,6 +534,7 @@ business: {
 
 
     gothic: {
+    gothic: {
     topOptions: [
         {
             name: "Gothic Shirt 1",
@@ -573,7 +574,44 @@ business: {
         }
     ],
 
-    bottomOptions: [],
+    bottomOptions: [
+        {
+            name: "Gothic Pants 1",
+            image: "fashion-assets/Gothic-pants1.png"
+        },
+        {
+            name: "Gothic Pants 2",
+            image: "fashion-assets/Gothic-pants2.png"
+        },
+        {
+            name: "Gothic Pants 3",
+            image: "fashion-assets/Gothic-pants3.png"
+        },
+        {
+            name: "Gothic Pants 4",
+            image: "fashion-assets/Gothic-pants4.png"
+        },
+        {
+            name: "Gothic Pants 5",
+            image: "fashion-assets/Gothic-pants5.png"
+        },
+        {
+            name: "Gothic Pants 6",
+            image: "fashion-assets/Gothic-pants6.png"
+        },
+        {
+            name: "Gothic Pants 7",
+            image: "fashion-assets/Gothic-pants7.png"
+        },
+        {
+            name: "Gothic Pants 8",
+            image: "fashion-assets/Gothic-pants8.png"
+        },
+        {
+            name: "Gothic Pants 9",
+            image: "fashion-assets/Gothic-pants9.png"
+        }
+    ],
 
     accessoryOptions: [],
 
