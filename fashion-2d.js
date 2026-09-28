@@ -669,11 +669,19 @@ business: {
         accessoryOptions: [
            {name: "Gothic-accesories1",
             image: "fashion-assets/Gothic-accesories1.png"
-           }
+           },
+
+           {name: "Gothic-accesories2",
+            image: "fashion-assets/Gothic-accesories2.png"
+           },
+
+           {name: "Gothic-accesories3",
+            image: "fashion-assets/Gothic-accesories3.png"
+           },
+
         ]
 
-    },
-
+           
     /* =====================================================
        HIPPY
     ===================================================== */
