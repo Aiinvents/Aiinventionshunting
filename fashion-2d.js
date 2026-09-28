@@ -660,28 +660,190 @@ business: {
 
         shoes: null,
 
-        shoeOptions: [],
+/* =====================================================
+   GOTHIC
+===================================================== */
 
-        /* ACCESSORIES */
+gothic: {
 
-        accessory: null,
+    label: "Gothic",
 
-        accessoryOptions: [
-           {name: "Gothic-accesories1",
-            image: "fashion-assets/Gothic-accesories1.png"
-           },
+    /* DEFAULT TOP */
 
-           {name: "Gothic-accesories2",
+    top: {
+        name: "Gothic Shirt 1",
+        image: "fashion-assets/Gothic-shirt1.png"
+    },
+
+    /* RANDOM GOTHIC TOPS */
+
+    topOptions: [
+
+        {
+            name: "Gothic Shirt 1",
+            image: "fashion-assets/Gothic-shirt1.png"
+        },
+
+        {
+            name: "Gothic Shirt 2",
+            image: "fashion-assets/Gothic-shirt2.png"
+        },
+
+        {
+            name: "Gothic Shirt 3",
+            image: "fashion-assets/Gothic-shirt3.png"
+        },
+
+        {
+            name: "Gothic Shirt 4",
+            image: "fashion-assets/Gothic-shirt4.png"
+        },
+
+        {
+            name: "Gothic Shirt 5",
+            image: "fashion-assets/Gothic-shirt5.png"
+        },
+
+        {
+            name: "Gothic Shirt 6",
+            image: "fashion-assets/Gothic-shirt6.png"
+        },
+
+        {
+            name: "Gothic Shirt 7",
+            image: "fashion-assets/Gothic-shirt7.png"
+        },
+
+        {
+            name: "Gothic Shirt 8",
+            image: "fashion-assets/Gothic-shirt8.png"
+        },
+
+        {
+            name: "Gothic Shirt 9",
+            image: "fashion-assets/Gothic-shirt9.png"
+        }
+
+    ],
+
+    /* DEFAULT BOTTOM */
+
+    bottom: {
+        name: "Gothic Pants 1",
+        image: "fashion-assets/Gothic-pants1.png"
+    },
+
+    /* RANDOM GOTHIC BOTTOMS */
+
+    bottomOptions: [
+
+        {
+            name: "Gothic Pants 1",
+            image: "fashion-assets/Gothic-pants1.png"
+        },
+
+        {
+            name: "Gothic Pants 2",
+            image: "fashion-assets/Gothic-pants2.png"
+        },
+
+        {
+            name: "Gothic Pants 3",
+            image: "fashion-assets/Gothic-pants3.png"
+        },
+
+        {
+            name: "Gothic Pants 4",
+            image: "fashion-assets/Gothic-pants4.png"
+        },
+
+        {
+            name: "Gothic Pants 5",
+            image: "fashion-assets/Gothic-pants5.png"
+        },
+
+        {
+            name: "Gothic Pants 6",
+            image: "fashion-assets/Gothic-pants6.png"
+        },
+
+        {
+            name: "Gothic Pants 7",
+            image: "fashion-assets/Gothic-pants7.png"
+        },
+
+        {
+            name: "Gothic Pants 8",
+            image: "fashion-assets/Gothic-pants8.png"
+        },
+
+        {
+            name: "Gothic Pants 9",
+            image: "fashion-assets/Gothic-pants9.png"
+        }
+
+    ],
+
+    /* SHOES */
+
+    shoes: null,
+
+    shoeOptions: [],
+
+    /* DEFAULT ACCESSORY */
+
+    accessory: {
+        name: "Gothic Accessory 1",
+        image: "fashion-assets/Gothic-accesories.png"
+    },
+
+    /* RANDOM GOTHIC ACCESSORIES */
+
+    accessoryOptions: [
+
+        {
+            name: "Gothic Accessory 1",
+            image: "fashion-assets/Gothic-accesories.png"
+        },
+
+        {
+            name: "Gothic Accessory 2",
             image: "fashion-assets/Gothic-accesories2.png"
-           },
+        },
 
-           {name: "Gothic-accesories3",
+        {
+            name: "Gothic Accessory 3",
             image: "fashion-assets/Gothic-accesories3.png"
-           },
+        },
 
-        ]
+        {
+            name: "Gothic Accessory 5",
+            image: "fashion-assets/Gothic-assecories5.png"
+        },
 
-           
+        {
+            name: "Gothic Accessory 6",
+            image: "fashion-assets/Gothic-assecories6.png"
+        },
+
+        {
+            name: "Gothic Accessory 7",
+            image: "fashion-assets/Gothic-assecories7.png"
+        },
+
+        {
+            name: "Gothic Accessory 8",
+            image: "fashion-assets/Gothic-assecories8.png"
+        },
+
+        {
+            name: "Gothic Accessory 9",
+            image: "fashion-assets/Gothic-accesories9.png"
+        }
+
+    ]
+
+},
     /* =====================================================
        HIPPY
     ===================================================== */
