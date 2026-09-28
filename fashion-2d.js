@@ -532,89 +532,143 @@ business: {
 
     },
 
+        /* =====================================================
+       GOTHIC
+    ===================================================== */
+
     gothic: {
-    topOptions: [
-        {
+
+        label: "Gothic",
+
+        /* DEFAULT TOP */
+
+        top: {
             name: "Gothic Shirt 1",
             image: "fashion-assets/Gothic-shirt1.png"
         },
-        {
-            name: "Gothic Shirt 2",
-            image: "fashion-assets/Gothic-shirt2.png"
-        },
-        {
-            name: "Gothic Shirt 3",
-            image: "fashion-assets/Gothic-shirt3.png"
-        },
-        {
-            name: "Gothic Shirt 4",
-            image: "fashion-assets/Gothic-shirt4.png"
-        },
-        {
-            name: "Gothic Shirt 5",
-            image: "fashion-assets/Gothic-shirt5.png"
-        },
-        {
-            name: "Gothic Shirt 6",
-            image: "fashion-assets/Gothic-shirt6.png"
-        },
-        {
-            name: "Gothic Shirt 7",
-            image: "fashion-assets/Gothic-shirt7.png"
-        },
-        {
-            name: "Gothic Shirt 8",
-            image: "fashion-assets/Gothic-shirt8.png"
-        },
-        {
-            name: "Gothic Shirt 9",
-            image: "fashion-assets/Gothic-shirt9.png"
-        }
-    ],
 
-    bottomOptions: [
-        {
+        /* RANDOM GOTHIC TOPS */
+
+        topOptions: [
+
+            {
+                name: "Gothic Shirt 1",
+                image: "fashion-assets/Gothic-shirt1.png"
+            },
+
+            {
+                name: "Gothic Shirt 2",
+                image: "fashion-assets/Gothic-shirt2.png"
+            },
+
+            {
+                name: "Gothic Shirt 3",
+                image: "fashion-assets/Gothic-shirt3.png"
+            },
+
+            {
+                name: "Gothic Shirt 4",
+                image: "fashion-assets/Gothic-shirt4.png"
+            },
+
+            {
+                name: "Gothic Shirt 5",
+                image: "fashion-assets/Gothic-shirt5.png"
+            },
+
+            {
+                name: "Gothic Shirt 6",
+                image: "fashion-assets/Gothic-shirt6.png"
+            },
+
+            {
+                name: "Gothic Shirt 7",
+                image: "fashion-assets/Gothic-shirt7.png"
+            },
+
+            {
+                name: "Gothic Shirt 8",
+                image: "fashion-assets/Gothic-shirt8.png"
+            },
+
+            {
+                name: "Gothic Shirt 9",
+                image: "fashion-assets/Gothic-shirt9.png"
+            }
+
+        ],
+
+        /* DEFAULT BOTTOM */
+
+        bottom: {
             name: "Gothic Pants 1",
             image: "fashion-assets/Gothic-pants1.png"
         },
-        {
-            name: "Gothic Pants 2",
-            image: "fashion-assets/Gothic-pants2.png"
-        },
-        {
-            name: "Gothic Pants 3",
-            image: "fashion-assets/Gothic-pants3.png"
-        },
-        {
-            name: "Gothic Pants 4",
-            image: "fashion-assets/Gothic-pants4.png"
-        },
-        {
-            name: "Gothic Pants 5",
-            image: "fashion-assets/Gothic-pants5.png"
-        },
-        {
-            name: "Gothic Pants 6",
-            image: "fashion-assets/Gothic-pants6.png"
-        },
-        {
-            name: "Gothic Pants 7",
-            image: "fashion-assets/Gothic-pants7.png"
-        },
-        {
-            name: "Gothic Pants 8",
-            image: "fashion-assets/Gothic-pants8.png"
-        },
-        {
-            name: "Gothic Pants 9",
-            image: "fashion-assets/Gothic-pants9.png"
-        }
-    ],
 
-    accessoryOptions: [],
+        /* RANDOM GOTHIC BOTTOMS */
 
-    shoeOptions: []
-},
+        bottomOptions: [
+
+            {
+                name: "Gothic Pants 1",
+                image: "fashion-assets/Gothic-pants1.png"
+            },
+
+            {
+                name: "Gothic Pants 2",
+                image: "fashion-assets/Gothic-pants2.png"
+            },
+
+            {
+                name: "Gothic Pants 3",
+                image: "fashion-assets/Gothic-pants3.png"
+            },
+
+            {
+                name: "Gothic Pants 4",
+                image: "fashion-assets/Gothic-pants4.png"
+            },
+
+            {
+                name: "Gothic Pants 5",
+                image: "fashion-assets/Gothic-pants5.png"
+            },
+
+            {
+                name: "Gothic Pants 6",
+                image: "fashion-assets/Gothic-pants6.png"
+            },
+
+            {
+                name: "Gothic Pants 7",
+                image: "fashion-assets/Gothic-pants7.png"
+            },
+
+            {
+                name: "Gothic Pants 8",
+                image: "fashion-assets/Gothic-pants8.png"
+            },
+
+            {
+                name: "Gothic Pants 9",
+                image: "fashion-assets/Gothic-pants9.png"
+            }
+
+        ],
+
+        /* SHOES */
+
+        shoes: null,
+
+        shoeOptions: [],
+
+        /* ACCESSORIES */
+
+        accessory: null,
+
+        accessoryOptions: []
+
+    },
 
     /* =====================================================
        HIPPY
