@@ -545,7 +545,8 @@ gothic: {
 
     top: {
         name: "Gothic Shirt 1",
-        image: "fashion-assets/Gothic-shirt1.png"
+        image: "fashion-assets/Gothic-shirt1.png",
+        link: "https://onelink.shein.com/54/63hh4dijjyg1?ismg_ol=0skQFJ9Padm_01_KOC-C"
     },
 
     /* RANDOM GOTHIC TOPS */
@@ -554,47 +555,56 @@ gothic: {
 
         {
             name: "Gothic Shirt 1",
-            image: "fashion-assets/Gothic-shirt1.png"
+            image: "fashion-assets/Gothic-shirt1.png",
+            link: "https://onelink.shein.com/54/63hh4dijjyg1?ismg_ol=0skQFJ9Padm_01_KOC-C"
         },
 
         {
             name: "Gothic Shirt 2",
-            image: "fashion-assets/Gothic-shirt2.png"
+            image: "fashion-assets/Gothic-shirt2.png",
+            link: "https://onelink.shein.com/54/63hh9owjhzdj?ismg_ol=GI9O6KAUGpB_01_KOC-C"
         },
 
         {
             name: "Gothic Shirt 3",
-            image: "fashion-assets/Gothic-shirt3.png"
+            image: "fashion-assets/Gothic-shirt3.png",
+            link: "https://onelink.shein.com/54/63hhc5oxluu2?ismg_ol=GEjzb410nit_01_KOC-C"
         },
 
         {
             name: "Gothic Shirt 4",
-            image: "fashion-assets/Gothic-shirt4.png"
+            image: "fashion-assets/Gothic-shirt4.png",
+            link: "https://onelink.shein.com/54/63hhe6p2rvuy?ismg_ol=5GfvK8dyHYH_01_KOC-C"
         },
 
         {
             name: "Gothic Shirt 5",
-            image: "fashion-assets/Gothic-shirt5.png"
+            image: "fashion-assets/Gothic-shirt5.png",
+            link: "https://onelink.shein.com/54/63hhgpghz42u?ismg_ol=2MiI39qW9qC_01_KOC-C"
         },
 
         {
             name: "Gothic Shirt 6",
-            image: "fashion-assets/Gothic-shirt6.png"
+            image: "fashion-assets/Gothic-shirt6.png",
+            link: "https://onelink.shein.com/54/63hhl1bxvg3m?ismg_ol=H0vS53u1ZAu_01_KOC-C"
         },
 
         {
             name: "Gothic Shirt 7",
-            image: "fashion-assets/Gothic-shirt7.png"
+            image: "fashion-assets/Gothic-shirt7.png",
+            link: "https://onelink.shein.com/54/63hhro2oi33q?ismg_ol=AOolOV5cXcf_01_KOC-C"
         },
 
         {
             name: "Gothic Shirt 8",
-            image: "fashion-assets/Gothic-shirt8.png"
+            image: "fashion-assets/Gothic-shirt8.png",
+            link: "https://onelink.shein.com/54/63hhw7u8un1a?ismg_ol=6381yq3EBwz_01_KOC-C"
         },
 
         {
             name: "Gothic Shirt 9",
-            image: "fashion-assets/Gothic-shirt9.png"
+            image: "fashion-assets/Gothic-shirt9.png",
+            link: "https://onelink.shein.com/54/63hhzea1b0gm?ismg_ol=GRwUIOwZK1T_01_KOC-C"
         }
 
     ],
@@ -603,7 +613,8 @@ gothic: {
 
     bottom: {
         name: "Gothic Pants 1",
-        image: "fashion-assets/Gothic-pants1.png"
+        image: "fashion-assets/Gothic-pants1.png",
+        link: "https://onelink.shein.com/54/63hfvnhbnvvh?ismg_ol=GYoIMmlbO2j_01_KOC-C"
     },
 
     /* RANDOM GOTHIC BOTTOMS */
@@ -612,47 +623,56 @@ gothic: {
 
         {
             name: "Gothic Pants 1",
-            image: "fashion-assets/Gothic-pants1.png"
+            image: "fashion-assets/Gothic-pants1.png",
+            link: "https://onelink.shein.com/54/63hfvnhbnvvh?ismg_ol=GYoIMmlbO2j_01_KOC-C"
         },
 
         {
             name: "Gothic Pants 2",
-            image: "fashion-assets/Gothic-pants2.png"
+            image: "fashion-assets/Gothic-pants2.png",
+            link: "https://onelink.shein.com/54/63hg28918ktv?ismg_ol=9pmZ9NgbkJH_01_KOC-C"
         },
 
         {
             name: "Gothic Pants 3",
-            image: "fashion-assets/Gothic-pants3.png"
+            image: "fashion-assets/Gothic-pants3.png",
+            link: "https://onelink.shein.com/54/63hg6vynt8oe?ismg_ol=4MRuaBPZjms_01_KOC-C"
         },
 
         {
             name: "Gothic Pants 4",
-            image: "fashion-assets/Gothic-pants4.png"
+            image: "fashion-assets/Gothic-pants4.png",
+            link: "https://onelink.shein.com/54/63hgmk9i0xlp?ismg_ol=4CUvIueBiDD_01_KOC-C"
         },
 
         {
             name: "Gothic Pants 5",
-            image: "fashion-assets/Gothic-pants5.png"
+            image: "fashion-assets/Gothic-pants5.png",
+            link: "https://onelink.shein.com/54/63hgcbapwkdw?ismg_ol=4jjXLOshe7f_01_KOC-C"
         },
 
         {
             name: "Gothic Pants 6",
-            image: "fashion-assets/Gothic-pants6.png"
+            image: "fashion-assets/Gothic-pants6.png",
+            link: "https://onelink.shein.com/54/63hgs5ingf9q?ismg_ol=Cc3SxQLeBmz_01_KOC-C"
         },
 
         {
             name: "Gothic Pants 7",
-            image: "fashion-assets/Gothic-pants7.png"
+            image: "fashion-assets/Gothic-pants7.png",
+            link: "https://onelink.shein.com/54/63hgvfwi7pt1?ismg_ol=DXNqSMOdpTw_01_KOC-C"
         },
 
         {
             name: "Gothic Pants 8",
-            image: "fashion-assets/Gothic-pants8.png"
+            image: "fashion-assets/Gothic-pants8.png",
+            link: "https://onelink.shein.com/54/63hgy2lzlnd8?ismg_ol=KSWuUTDoZ9M_01_KOC-C"
         },
 
         {
             name: "Gothic Pants 9",
-            image: "fashion-assets/Gothic-pants9.png"
+            image: "fashion-assets/Gothic-pants9.png",
+            link: "https://onelink.shein.com/54/63hh0z6mnd52?ismg_ol=B99wHVHFNVz_01_KOC-C"
         }
 
     ],
