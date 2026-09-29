@@ -1206,6 +1206,7 @@ function showLook(style) {
     if (!look) {
         return;
     }
+   updateShopButtons(look);
 
 
     /* BOTTOM */
@@ -1359,3 +1360,26 @@ document.addEventListener(
 
     }
 );
+/* =========================================================
+   AFFILIATE SHOP BUTTONS
+========================================================= */
+
+const shopTopButton = document.getElementById("shop-top");
+const shopBottomButton = document.getElementById("shop-bottom");
+
+function updateShopButtons(look) {
+
+    if (look.top && look.top.link) {
+        shopTopButton.href = look.top.link;
+        shopTopButton.hidden = false;
+    } else {
+        shopTopButton.hidden = true;
+    }
+
+    if (look.bottom && look.bottom.link) {
+        shopBottomButton.href = look.bottom.link;
+        shopBottomButton.hidden = false;
+    } else {
+        shopBottomButton.hidden = true;
+    }
+}
