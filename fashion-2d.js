@@ -1,1385 +1,837 @@
-/* =========================================================
-   AI INVENTIONS - 2D FASHION LAYER SYSTEM
+// AI Inventions — 2D Fashion Layer System
 
-   Random clothing generator for the avatar.
-
-   Current working styles:
-   - Bohemian
-   - Sexy
-
-   Other styles are ready for clothing to be added later.
-========================================================= */
-
-
-/* =========================================================
-   FASHION LOOKS
-========================================================= */
+function createStyle(
+  label,
+  topOptions = [],
+  bottomOptions = [],
+  shoeOptions = [],
+  accessoryOptions = []
+) {
+  return {
+    label,
+    top: topOptions[0] ?? null,
+    topOptions,
+    bottom: bottomOptions[0] ?? null,
+    bottomOptions,
+    shoes: shoeOptions[0] ?? null,
+    shoeOptions,
+    accessory: accessoryOptions[0] ?? null,
+    accessoryOptions
+  };
+}
 
 const fashionLooks = {
-
-    /* =====================================================
-       BOHEMIAN
-    ===================================================== */
-
-    bohemian: {
-
-        label: "Bohemian",
-
-        /* DEFAULT TOP */
-
-        top: {
-            name: "Bohemian Top",
-            image: "fashion-assets/bohemian-top.png"
-        },
-
-        /* RANDOM BOHEMIAN TOPS */
-
-        topOptions: [
-
-            {
-                name: "Bohemian Top Original",
-                image: "fashion-assets/bohemian-top.png"
-            },
-
-            {
-                name: "Bohemian Top 1",
-                image: "fashion-assets/bohemian-top1.png"
-            },
-
-            {
-                name: "Bohemian Top 2",
-                image: "fashion-assets/bohemian-top2.png"
-            },
-
-            {
-                name: "Bohemian Top 3",
-                image: "fashion-assets/bohemian-top3.png"
-            },
-
-            {
-                name: "Bohemian Top 4",
-                image: "fashion-assets/bohemian-top4.png"
-            },
-
-            {
-                name: "Bohemian Top 5",
-                image: "fashion-assets/bohemian-top5.png"
-            },
-
-            {
-                name: "Bohemian Top 6",
-                image: "fashion-assets/bohemian-top6.png"
-            },
-
-            {
-                name: "Bohemian Top 7",
-                image: "fashion-assets/bohemian-top7.png"
-            },
-
-            {
-                name: "Bohemian Top 8",
-                image: "fashion-assets/bohemian-top8.png"
-            },
-
-            {
-                name: "Bohemian Top 9",
-                image: "fashion-assets/bohemian-top9.png"
-            },
-
-            {
-                name: "Bohemian Top 10",
-                image: "fashion-assets/bohemian-top10.png"
-            }
-
-        ],
-
-        /* DEFAULT BOTTOM */
-
-        bottom: {
-            name: "Bohemian Shorts",
-            image: "fashion-assets/bohemian_shorts.png"
-        },
-
-        /* RANDOM BOHEMIAN BOTTOMS */
-
-        bottomOptions: [
-
-            {
-                name: "Bohemian Shorts",
-                image: "fashion-assets/bohemian_shorts.png"
-            },
-
-            {
-                name: "Bohemian Bottom 1",
-                image: "fashion-assets/boho-pants1.png"
-            },
-
-            {
-                name: "Bohemian Bottom 2",
-                image: "fashion-assets/boho-pants2.png"
-            },
-
-            {
-                name: "Bohemian Bottom 3",
-                image: "fashion-assets/boho-pants3.png"
-            },
-
-            {
-                name: "Bohemian Bottom 4",
-                image: "fashion-assets/boho-pants4.png"
-            },
-
-            {
-                name: "Bohemian Bottom 5",
-                image: "fashion-assets/boho-pants5.png"
-            },
-
-            {
-                name: "Bohemian Bottom 6",
-                image: "fashion-assets/boho-pants6.png"
-            },
-
-            {
-                name: "Bohemian Bottom 7",
-                image: "fashion-assets/boho-pants7.png"
-            },
-
-            {
-                name: "Bohemian Bottom 8",
-                image: "fashion-assets/boho-pants8.png"
-            },
-
-            {
-                name: "Bohemian Bottom 9",
-                image: "fashion-assets/boho-pants9.png"
-            }
-
-        ],
-
-        /* SHOES */
-
-        shoes: null,
-
-        shoeOptions: [],
-
-        /* ACCESSORIES */
-
-        accessory: null,
-
-        accessoryOptions: [
-
-            {
-                name: "Bohemian Accessory 1",
-                image: "fashion-assets/Boho-accessories.png"
-            },
-
-            {
-                name: "Bohemian Accessory 2",
-                image: "fashion-assets/boho-accessories1.png"
-            },
-
-            {
-                name: "Bohemian Accessory 3",
-                image: "fashion-assets/boho-accesories2.png"
-            },
-
-            {
-                name: "Bohemian Accessory 4",
-                image: "fashion-assets/boho-accessories3.png"
-            },
-
-            {
-                name: "Bohemian Accessory 5",
-                image: "fashion-assets/boho-accesories4.png"
-            },
-
-            {
-                name: "Bohemian Accessory 6",
-                image: "fashion-assets/boho-accesories5.png"
-            }
-
-        ]
-
-    },
-
-
-    /* =====================================================
-        /* =====================================================
-       CASUAL
-    ===================================================== */
-
-    casual: {
-
-        label: "Casual",
-
-
-        /* =================================================
-           DEFAULT TOP
-        ================================================= */
-
-        top: {
-            name: "Casual Shirt 1",
-            image: "fashion-assets/Casual-shirt1.png"
-        },
-
-
-        /* =================================================
-           RANDOM CASUAL TOPS
-        ================================================= */
-
-        topOptions: [
-
-            {
-                name: "Casual Shirt 1",
-                image: "fashion-assets/Casual-shirt1.png"
-            },
-
-            {
-                name: "Casual Shirt 2",
-                image: "fashion-assets/Casual-shirt2.png"
-            },
-
-            {
-                name: "Casual Shirt 3",
-                image: "fashion-assets/Casual-shirt3.png"
-            }
-
-        ],
-
-
-        /* =================================================
-           DEFAULT BOTTOM
-        ================================================= */
-
-        bottom: {
-            name: "Casual Shorts 1",
-            image: "fashion-assets/Casual-shorts1.png"
-        },
-
-
-        /* =================================================
-           RANDOM CASUAL BOTTOMS
-        ================================================= */
-
-        bottomOptions: [
-
-            {
-                name: "Casual Shorts 1",
-                image: "fashion-assets/Casual-shorts1.png"
-            },
-
-            {
-                name: "Casual Shorts 2",
-                image: "fashion-assets/Casual-shorts2.png"
-            },
-
-            {
-                name: "Casual Shorts 3",
-                image: "fashion-assets/Casual-shorts3.png"
-            },
-
-            {
-                name: "Casual Shorts 4",
-                image: "fashion-assets/Casual-shorts4.png"
-            },
-
-            {
-                name: "Casual Shorts 5",
-                image: "fashion-assets/Casual-shorts5.png"
-            },
-
-            {
-                name: "Casual Shorts 6",
-                image: "fashion-assets/Casual-shorts6.png"
-            },
-
-            {
-                name: "Casual Shorts 7",
-                image: "fashion-assets/Casual-shorts7.png"
-            }
-
-        ],
-
-
-        /* =================================================
-           CASUAL SHOES
-        ================================================= */
-
-        shoes: null,
-
-        shoeOptions: [],
-
-
-        /* =================================================
-           CASUAL ACCESSORIES
-        ================================================= */
-
-        accessory: null,
-
-        accessoryOptions: []
-
-    },
-    /* =====================================================
-   BUSINESS
-===================================================== */
-
-business: {
-
-    label: "Business",
-
-
-    /* =================================================
-       DEFAULT TOP
-    ================================================= */
-
-    top: {
+  bohemian: createStyle(
+    "Bohemian",
+
+    [
+      {
+        name: "Bohemian Top Original",
+        image: "fashion-assets/bohemian-top.png"
+      },
+      {
+        name: "Bohemian Top 1",
+        image: "fashion-assets/bohemian-top1.png"
+      },
+      {
+        name: "Bohemian Top 2",
+        image: "fashion-assets/bohemian-top2.png"
+      },
+      {
+        name: "Bohemian Top 3",
+        image: "fashion-assets/bohemian-top3.png"
+      },
+      {
+        name: "Bohemian Top 4",
+        image: "fashion-assets/bohemian-top4.png"
+      },
+      {
+        name: "Bohemian Top 5",
+        image: "fashion-assets/bohemian-top5.png"
+      },
+      {
+        name: "Bohemian Top 6",
+        image: "fashion-assets/bohemian-top6.png"
+      },
+      {
+        name: "Bohemian Top 7",
+        image: "fashion-assets/bohemian-top7.png"
+      },
+      {
+        name: "Bohemian Top 8",
+        image: "fashion-assets/bohemian-top8.png"
+      },
+      {
+        name: "Bohemian Top 9",
+        image: "fashion-assets/bohemian-top9.png"
+      },
+      {
+        name: "Bohemian Top 10",
+        image: "fashion-assets/bohemian-top10.png"
+      }
+    ],
+
+    [
+      {
+        name: "Bohemian Shorts",
+        image: "fashion-assets/bohemian_shorts.png"
+      },
+      {
+        name: "Bohemian Bottom 1",
+        image: "fashion-assets/boho-pants1.png"
+      },
+      {
+        name: "Bohemian Bottom 2",
+        image: "fashion-assets/boho-pants2.png"
+      },
+      {
+        name: "Bohemian Bottom 3",
+        image: "fashion-assets/boho-pants3.png"
+      },
+      {
+        name: "Bohemian Bottom 4",
+        image: "fashion-assets/boho-pants4.png"
+      },
+      {
+        name: "Bohemian Bottom 5",
+        image: "fashion-assets/boho-pants5.png"
+      },
+      {
+        name: "Bohemian Bottom 6",
+        image: "fashion-assets/boho-pants6.png"
+      },
+      {
+        name: "Bohemian Bottom 7",
+        image: "fashion-assets/boho-pants7.png"
+      },
+      {
+        name: "Bohemian Bottom 8",
+        image: "fashion-assets/boho-pants8.png"
+      },
+      {
+        name: "Bohemian Bottom 9",
+        image: "fashion-assets/boho-pants9.png"
+      }
+    ],
+
+    [],
+
+    [
+      {
+        name: "Bohemian Accessory 1",
+        image: "fashion-assets/Boho-accessories.png"
+      },
+      {
+        name: "Bohemian Accessory 2",
+        image: "fashion-assets/boho-accessories1.png"
+      },
+      {
+        name: "Bohemian Accessory 3",
+        image: "fashion-assets/boho-accesories2.png"
+      },
+      {
+        name: "Bohemian Accessory 4",
+        image: "fashion-assets/boho-accessories3.png"
+      },
+      {
+        name: "Bohemian Accessory 5",
+        image: "fashion-assets/boho-accesories4.png"
+      },
+      {
+        name: "Bohemian Accessory 6",
+        image: "fashion-assets/boho-accesories5.png"
+      }
+    ]
+  ),
+
+  casual: createStyle(
+    "Casual",
+
+    [
+      {
+        name: "Casual Shirt 1",
+        image: "fashion-assets/Casual-shirt1.png"
+      },
+      {
+        name: "Casual Shirt 2",
+        image: "fashion-assets/Casual-shirt2.png"
+      },
+      {
+        name: "Casual Shirt 3",
+        image: "fashion-assets/Casual-shirt3.png"
+      }
+    ],
+
+    [
+      {
+        name: "Casual Shorts 1",
+        image: "fashion-assets/Casual-shorts1.png"
+      },
+      {
+        name: "Casual Shorts 2",
+        image: "fashion-assets/Casual-shorts2.png"
+      },
+      {
+        name: "Casual Shorts 3",
+        image: "fashion-assets/Casual-shorts3.png"
+      },
+      {
+        name: "Casual Shorts 4",
+        image: "fashion-assets/Casual-shorts4.png"
+      },
+      {
+        name: "Casual Shorts 5",
+        image: "fashion-assets/Casual-shorts5.png"
+      },
+      {
+        name: "Casual Shorts 6",
+        image: "fashion-assets/Casual-shorts6.png"
+      },
+      {
+        name: "Casual Shorts 7",
+        image: "fashion-assets/Casual-shorts7.png"
+      }
+    ],
+
+    [],
+
+    []
+  ),
+
+  business: createStyle(
+    "Business",
+
+    [
+      {
         name: "Business Shirt 2",
         image: "fashion-assets/business-shirt2.png"
-    },
-
-
-    /* =================================================
-       RANDOM BUSINESS TOPS
-    ================================================= */
-
-    topOptions: [
-
-        {
-            name: "Business Shirt 2",
-            image: "fashion-assets/business-shirt2.png"
-        },
-
-        {
-            name: "Business Shirt 3",
-            image: "fashion-assets/business-shirt3.png"
-        },
-
-        {
-            name: "Business Shirt 4",
-            image: "fashion-assets/business-shirt4.png"
-        },
-
-        {
-            name: "Business Shirt 5",
-            image: "fashion-assets/business-shirt5.png"
-        },
-
-        {
-            name: "Business Shirt 6",
-            image: "fashion-assets/business-shirt6.png"
-        },
-
-        {
-            name: "Business Shirt 7",
-            image: "fashion-assets/business-shirt7.png"
-        },
-
-        {
-            name: "Business Shirt 8",
-            image: "fashion-assets/business-shirt8.png"
-        }
-
+      },
+      {
+        name: "Business Shirt 3",
+        image: "fashion-assets/business-shirt3.png"
+      },
+      {
+        name: "Business Shirt 4",
+        image: "fashion-assets/business-shirt4.png"
+      },
+      {
+        name: "Business Shirt 5",
+        image: "fashion-assets/business-shirt5.png"
+      },
+      {
+        name: "Business Shirt 6",
+        image: "fashion-assets/business-shirt6.png"
+      },
+      {
+        name: "Business Shirt 7",
+        image: "fashion-assets/business-shirt7.png"
+      },
+      {
+        name: "Business Shirt 8",
+        image: "fashion-assets/business-shirt8.png"
+      }
     ],
 
-
-    /* =================================================
-       DEFAULT BOTTOM
-    ================================================= */
-
-    bottom: {
+    [
+      {
         name: "Business Pant 1",
         image: "fashion-assets/Business-pant1.png"
-    },
-
-
-    /* =================================================
-       RANDOM BUSINESS BOTTOMS
-    ================================================= */
-
-    bottomOptions: [
-
-        {
-            name: "Business Pant 1",
-            image: "fashion-assets/Business-pant1.png"
-        },
-
-        {
-            name: "Business Pant 2",
-            image: "fashion-assets/Business-pant2.png"
-        },
-
-        {
-            name: "Business Pant 3",
-            image: "fashion-assets/Business-pant3.png"
-        },
-
-        {
-            name: "Business Pant 4",
-            image: "fashion-assets/Business-pant4.png"
-        },
-
-        {
-            name: "Business Pant 5",
-            image: "fashion-assets/Business-pant5.png"
-        },
-
-        {
-            name: "Business Pant 6",
-            image: "fashion-assets/Business-pant6.png"
-        },
-
-        {
-            name: "Business Pant 7",
-            image: "fashion-assets/Business-pant7.png"
-        },
-
-        {
-            name: "Business Pant 8",
-            image: "fashion-assets/Business-pant8.png"
-        },
-
-        {
-            name: "Business Pant 9",
-            image: "fashion-assets/Business-pant9.png"
-        }
-
+      },
+      {
+        name: "Business Pant 2",
+        image: "fashion-assets/Business-pant2.png"
+      },
+      {
+        name: "Business Pant 3",
+        image: "fashion-assets/Business-pant3.png"
+      },
+      {
+        name: "Business Pant 4",
+        image: "fashion-assets/Business-pant4.png"
+      },
+      {
+        name: "Business Pant 5",
+        image: "fashion-assets/Business-pant5.png"
+      },
+      {
+        name: "Business Pant 6",
+        image: "fashion-assets/Business-pant6.png"
+      },
+      {
+        name: "Business Pant 7",
+        image: "fashion-assets/Business-pant7.png"
+      },
+      {
+        name: "Business Pant 8",
+        image: "fashion-assets/Business-pant8.png"
+      },
+      {
+        name: "Business Pant 9",
+        image: "fashion-assets/Business-pant9.png"
+      }
     ],
 
+    [],
 
-    /* =================================================
-       BUSINESS SHOES
-    ================================================= */
+    []
+  ),
 
-    shoes: null,
+  athletic: createStyle(
+    "Athletic",
+    [],
+    [],
+    [],
+    []
+  ),
 
-    shoeOptions: [],
+  barbie: createStyle(
+    "Barbie",
 
+    [
+      {
+        name: "Barbie Top 1",
+        image: "fashion-assets/Barbie-top1.png"
+      },
+      {
+        name: "Barbie Top 2",
+        image: "fashion-assets/Barbie-top2.png"
+      },
+      {
+        name: "Barbie Top 3",
+        image: "fashion-assets/Barbie-top3.png"
+      },
+      {
+        name: "Barbie Top 4",
+        image: "fashion-assets/Barbie-top4.png"
+      },
+      {
+        name: "Barbie Top 5",
+        image: "fashion-assets/Barbie-top5.png"
+      },
+      {
+        name: "Barbie Top 6",
+        image: "fashion-assets/Barbie-top6.png"
+      },
+      {
+        name: "Barbie Top 7",
+        image: "fashion-assets/Barbie-top7.png"
+      },
+      {
+        name: "Barbie Top 8",
+        image: "fashion-assets/Barbie-top8.png"
+      },
+      {
+        name: "Barbie Top 9",
+        image: "fashion-assets/Barbie-top9.png"
+      },
+      {
+        name: "Barbie Top 10",
+        image: "fashion-assets/Barbie-top10.png"
+      },
+      {
+        name: "Barbie Top 11",
+        image: "fashion-assets/Barbie-top11.png"
+      }
+    ],
 
-    /* =================================================
-       BUSINESS ACCESSORIES
-    ================================================= */
+    [
+      {
+        name: "Barbie Bottom 1",
+        image: "fashion-assets/Barbie-bottoms1.png"
+      },
+      {
+        name: "Barbie Bottom 2",
+        image: "fashion-assets/Barbie-bottoms2.png"
+      },
+      {
+        name: "Barbie Bottom 3",
+        image: "fashion-assets/Barbie-bottoms3.png"
+      },
+      {
+        name: "Barbie Bottom 4",
+        image: "fashion-assets/Barbie-bottoms4.png"
+      },
+      {
+        name: "Barbie Bottom 5",
+        image: "fashion-assets/Barbie-bottoms5.png"
+      },
+      {
+        name: "Barbie Bottom 6",
+        image: "fashion-assets/Barbie-bottoms6.png"
+      },
+      {
+        name: "Barbie Bottom 7",
+        image: "fashion-assets/Barbie-bottoms7.png"
+      },
+      {
+        name: "Barbie Bottom 8",
+        image: "fashion-assets/Barbie-bottoms8.png"
+      },
+      {
+        name: "Barbie Bottom 9",
+        image: "fashion-assets/Barbie-bottoms9.png"
+      },
+      {
+        name: "Barbie Bottom 10",
+        image: "fashion-assets/Barbie-bottoms10.png"
+      },
+      {
+        name: "Barbie Bottom 11",
+        image: "fashion-assets/Barbie-bottoms11.png"
+      }
+    ],
 
-    accessory: null,
+    [],
 
-    accessoryOptions: []
+    []
+  ),
 
-},
-    /* =====================================================
-       ATHLETIC
-    ===================================================== */
+  punk: createStyle(
+    "Punk",
+    [],
+    [],
+    [],
+    []
+  ),
 
-    athletic: {
+  gothic: createStyle(
+    "Gothic",
 
-        label: "Athletic",
-
-        top: null,
-        topOptions: [],
-
-        bottom: null,
-        bottomOptions: [],
-
-        shoes: null,
-        shoeOptions: [],
-
-        accessory: null,
-        accessoryOptions: []
-
-    },
-
-
-    /* =====================================================
-       BARBIE
-    ===================================================== */
-
-    barbie: {
-
-        label: "Barbie",
-
-        top: null,
-        topOptions: [],
-
-        bottom: null,
-        bottomOptions: [],
-
-        shoes: null,
-        shoeOptions: [],
-
-        accessory: null,
-        accessoryOptions: []
-
-    },
-
-
-    /* =====================================================
-       PUNK
-    ===================================================== */
-
-    punk: {
-
-        label: "Punk",
-
-        top: null,
-        topOptions: [],
-
-        bottom: null,
-        bottomOptions: [],
-
-        shoes: null,
-        shoeOptions: [],
-
-        accessory: null,
-        accessoryOptions: []
-
-    },
-
-
-/* =====================================================
-   GOTHIC
-===================================================== */
-
-gothic: {
-
-    label: "Gothic",
-
-    /* DEFAULT TOP */
-
-    top: {
+    [
+      {
         name: "Gothic Shirt 1",
         image: "fashion-assets/Gothic-shirt1.png",
         link: "https://onelink.shein.com/54/63hh4dijjyg1?ismg_ol=0skQFJ9Padm_01_KOC-C"
-    },
-
-    /* RANDOM GOTHIC TOPS */
-
-    topOptions: [
-
-        {
-            name: "Gothic Shirt 1",
-            image: "fashion-assets/Gothic-shirt1.png",
-            link: "https://onelink.shein.com/54/63hh4dijjyg1?ismg_ol=0skQFJ9Padm_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Shirt 2",
-            image: "fashion-assets/Gothic-shirt2.png",
-            link: "https://onelink.shein.com/54/63hh9owjhzdj?ismg_ol=GI9O6KAUGpB_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Shirt 3",
-            image: "fashion-assets/Gothic-shirt3.png",
-            link: "https://onelink.shein.com/54/63hhc5oxluu2?ismg_ol=GEjzb410nit_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Shirt 4",
-            image: "fashion-assets/Gothic-shirt4.png",
-            link: "https://onelink.shein.com/54/63hhe6p2rvuy?ismg_ol=5GfvK8dyHYH_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Shirt 5",
-            image: "fashion-assets/Gothic-shirt5.png",
-            link: "https://onelink.shein.com/54/63hhgpghz42u?ismg_ol=2MiI39qW9qC_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Shirt 6",
-            image: "fashion-assets/Gothic-shirt6.png",
-            link: "https://onelink.shein.com/54/63hhl1bxvg3m?ismg_ol=H0vS53u1ZAu_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Shirt 7",
-            image: "fashion-assets/Gothic-shirt7.png",
-            link: "https://onelink.shein.com/54/63hhro2oi33q?ismg_ol=AOolOV5cXcf_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Shirt 8",
-            image: "fashion-assets/Gothic-shirt8.png",
-            link: "https://onelink.shein.com/54/63hhw7u8un1a?ismg_ol=6381yq3EBwz_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Shirt 9",
-            image: "fashion-assets/Gothic-shirt9.png",
-            link: "https://onelink.shein.com/54/63hhzea1b0gm?ismg_ol=GRwUIOwZK1T_01_KOC-C"
-        }
-
+      },
+      {
+        name: "Gothic Shirt 2",
+        image: "fashion-assets/Gothic-shirt2.png",
+        link: "https://onelink.shein.com/54/63hh9owjhzdj?ismg_ol=GI9O6KAUGpB_01_KOC-C"
+      },
+      {
+        name: "Gothic Shirt 3",
+        image: "fashion-assets/Gothic-shirt3.png",
+        link: "https://onelink.shein.com/54/63hhc5oxluu2?ismg_ol=GEjzb410nit_01_KOC-C"
+      },
+      {
+        name: "Gothic Shirt 4",
+        image: "fashion-assets/Gothic-shirt4.png",
+        link: "https://onelink.shein.com/54/63hhe6p2rvuy?ismg_ol=5GfvK8dyHYH_01_KOC-C"
+      },
+      {
+        name: "Gothic Shirt 5",
+        image: "fashion-assets/Gothic-shirt5.png",
+        link: "https://onelink.shein.com/54/63hhgpghz42u?ismg_ol=2MiI39qW9qC_01_KOC-C"
+      },
+      {
+        name: "Gothic Shirt 6",
+        image: "fashion-assets/Gothic-shirt6.png",
+        link: "https://onelink.shein.com/54/63hhl1bxvg3m?ismg_ol=H0vS53u1ZAu_01_KOC-C"
+      },
+      {
+        name: "Gothic Shirt 7",
+        image: "fashion-assets/Gothic-shirt7.png",
+        link: "https://onelink.shein.com/54/63hhro2oi33q?ismg_ol=AOolOV5cXcf_01_KOC-C"
+      },
+      {
+        name: "Gothic Shirt 8",
+        image: "fashion-assets/Gothic-shirt8.png",
+        link: "https://onelink.shein.com/54/63hhw7u8un1a?ismg_ol=6381yq3EBwz_01_KOC-C"
+      },
+      {
+        name: "Gothic Shirt 9",
+        image: "fashion-assets/Gothic-shirt9.png",
+        link: "https://onelink.shein.com/54/63hhzea1b0gm?ismg_ol=GRwUIOwZK1T_01_KOC-C"
+      }
     ],
 
-    /* DEFAULT BOTTOM */
-
-    bottom: {
+    [
+      {
         name: "Gothic Pants 1",
         image: "fashion-assets/Gothic-pants1.png",
         link: "https://onelink.shein.com/54/63hfvnhbnvvh?ismg_ol=GYoIMmlbO2j_01_KOC-C"
-    },
-
-    /* RANDOM GOTHIC BOTTOMS */
-
-    bottomOptions: [
-
-        {
-            name: "Gothic Pants 1",
-            image: "fashion-assets/Gothic-pants1.png",
-            link: "https://onelink.shein.com/54/63hfvnhbnvvh?ismg_ol=GYoIMmlbO2j_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Pants 2",
-            image: "fashion-assets/Gothic-pants2.png",
-            link: "https://onelink.shein.com/54/63hg28918ktv?ismg_ol=9pmZ9NgbkJH_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Pants 3",
-            image: "fashion-assets/Gothic-pants3.png",
-            link: "https://onelink.shein.com/54/63hg6vynt8oe?ismg_ol=4MRuaBPZjms_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Pants 4",
-            image: "fashion-assets/Gothic-pants4.png",
-            link: "https://onelink.shein.com/54/63hgmk9i0xlp?ismg_ol=4CUvIueBiDD_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Pants 5",
-            image: "fashion-assets/Gothic-pants5.png",
-            link: "https://onelink.shein.com/54/63hgcbapwkdw?ismg_ol=4jjXLOshe7f_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Pants 6",
-            image: "fashion-assets/Gothic-pants6.png",
-            link: "https://onelink.shein.com/54/63hgs5ingf9q?ismg_ol=Cc3SxQLeBmz_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Pants 7",
-            image: "fashion-assets/Gothic-pants7.png",
-            link: "https://onelink.shein.com/54/63hgvfwi7pt1?ismg_ol=DXNqSMOdpTw_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Pants 8",
-            image: "fashion-assets/Gothic-pants8.png",
-            link: "https://onelink.shein.com/54/63hgy2lzlnd8?ismg_ol=KSWuUTDoZ9M_01_KOC-C"
-        },
-
-        {
-            name: "Gothic Pants 9",
-            image: "fashion-assets/Gothic-pants9.png",
-            link: "https://onelink.shein.com/54/63hh0z6mnd52?ismg_ol=B99wHVHFNVz_01_KOC-C"
-        }
-
+      },
+      {
+        name: "Gothic Pants 2",
+        image: "fashion-assets/Gothic-pants2.png",
+        link: "https://onelink.shein.com/54/63hg28918ktv?ismg_ol=9pmZ9NgbkJH_01_KOC-C"
+      },
+      {
+        name: "Gothic Pants 3",
+        image: "fashion-assets/Gothic-pants3.png",
+        link: "https://onelink.shein.com/54/63hg6vynt8oe?ismg_ol=4MRuaBPZjms_01_KOC-C"
+      },
+      {
+        name: "Gothic Pants 4",
+        image: "fashion-assets/Gothic-pants4.png",
+        link: "https://onelink.shein.com/54/63hgmk9i0xlp?ismg_ol=4CUvIueBiDD_01_KOC-C"
+      },
+      {
+        name: "Gothic Pants 5",
+        image: "fashion-assets/Gothic-pants5.png",
+        link: "https://onelink.shein.com/54/63hgcbapwkdw?ismg_ol=4jjXLOshe7f_01_KOC-C"
+      },
+      {
+        name: "Gothic Pants 6",
+        image: "fashion-assets/Gothic-pants6.png",
+        link: "https://onelink.shein.com/54/63hgs5ingf9q?ismg_ol=Cc3SxQLeBmz_01_KOC-C"
+      },
+      {
+        name: "Gothic Pants 7",
+        image: "fashion-assets/Gothic-pants7.png",
+        link: "https://onelink.shein.com/54/63hgvfwi7pt1?ismg_ol=DXNqSMOdpTw_01_KOC-C"
+      },
+      {
+        name: "Gothic Pants 8",
+        image: "fashion-assets/Gothic-pants8.png",
+        link: "https://onelink.shein.com/54/63hgy2lzlnd8?ismg_ol=KSWuUTDoZ9M_01_KOC-C"
+      },
+      {
+        name: "Gothic Pants 9",
+        image: "fashion-assets/Gothic-pants9.png",
+        link: "https://onelink.shein.com/54/63hh0z6mnd52?ismg_ol=B99wHVHFNVz_01_KOC-C"
+      }
     ],
 
-    /* SHOES */
+    [],
 
-    shoes: null,
-
-    shoeOptions: [],
-
-    /* DEFAULT ACCESSORY */
-
-    accessory: {
+    [
+      {
         name: "Gothic Accessory 1",
         image: "fashion-assets/Gothic-accesories.png"
-    },
-
-    /* RANDOM GOTHIC ACCESSORIES */
-
-    accessoryOptions: [
-
-        {
-            name: "Gothic Accessory 1",
-            image: "fashion-assets/Gothic-accesories.png"
-        },
-
-        {
-            name: "Gothic Accessory 2",
-            image: "fashion-assets/Gothic-accesories2.png"
-        },
-
-        {
-            name: "Gothic Accessory 3",
-            image: "fashion-assets/Gothic-accesories3.png"
-        },
-
-        {
-            name: "Gothic Accessory 5",
-            image: "fashion-assets/Gothic-assecories5.png"
-        },
-
-        {
-            name: "Gothic Accessory 6",
-            image: "fashion-assets/Gothic-assecories6.png"
-        },
-
-        {
-            name: "Gothic Accessory 7",
-            image: "fashion-assets/Gothic-assecories7.png"
-        },
-
-        {
-            name: "Gothic Accessory 8",
-            image: "fashion-assets/Gothic-assecories8.png"
-        },
-
-        {
-            name: "Gothic Accessory 9",
-            image: "fashion-assets/Gothic-accesories9.png"
-        }
-
+      },
+      {
+        name: "Gothic Accessory 2",
+        image: "fashion-assets/Gothic-accesories2.png"
+      },
+      {
+        name: "Gothic Accessory 3",
+        image: "fashion-assets/Gothic-accesories3.png"
+      },
+      {
+        name: "Gothic Accessory 5",
+        image: "fashion-assets/Gothic-assecories5.png"
+      },
+      {
+        name: "Gothic Accessory 6",
+        image: "fashion-assets/Gothic-assecories6.png"
+      },
+      {
+        name: "Gothic Accessory 7",
+        image: "fashion-assets/Gothic-assecories7.png"
+      },
+      {
+        name: "Gothic Accessory 8",
+        image: "fashion-assets/Gothic-assecories8.png"
+      },
+      {
+        name: "Gothic Accessory 9",
+        image: "fashion-assets/Gothic-accesories9.png"
+      }
     ]
+  ),
 
-},
-    /* =====================================================
-       HIPPY
-    ===================================================== */
+  hippy: createStyle(
+    "Hippy",
+    [],
+    [],
+    [],
+    []
+  ),
 
-    hippy: {
+  sexy: createStyle(
+    "Sexy",
 
-        label: "Hippy",
+    [
+      {
+        name: "Sexy Top 5",
+        image: "fashion-assets/Sexy-top5.png"
+      },
+      {
+        name: "Sexy Top 6",
+        image: "fashion-assets/Sexy-top6.png"
+      },
+      {
+        name: "Sexy Top 7",
+        image: "fashion-assets/Sexy-top7.png"
+      },
+      {
+        name: "Sexy Top 8",
+        image: "fashion-assets/Sexy-top8.png"
+      },
+      {
+        name: "Sexy Top 9",
+        image: "fashion-assets/Sexy-top9.png"
+      }
+    ],
 
-        top: null,
-        topOptions: [],
+    [
+      {
+        name: "Sexy Bottom 1",
+        image: "fashion-assets/Sexy-bottoms1.png"
+      },
+      {
+        name: "Sexy Bottom 2",
+        image: "fashion-assets/Sexy-bottoms2.png"
+      },
+      {
+        name: "Sexy Bottom 3",
+        image: "fashion-assets/Sexy-bottoms3.png"
+      },
+      {
+        name: "Sexy Bottom 4",
+        image: "fashion-assets/Sexy-bottoms4.png"
+      },
+      {
+        name: "Sexy Bottom 5",
+        image: "fashion-assets/Sexy-bottoms5.png"
+      },
+      {
+        name: "Sexy Bottom 6",
+        image: "fashion-assets/Sexy-bottoms6.png"
+      },
+      {
+        name: "Sexy Bottom 8",
+        image: "fashion-assets/Sexy-bottoms8.png"
+      }
+    ],
 
-        bottom: null,
-        bottomOptions: [],
+    [],
 
-        shoes: null,
-        shoeOptions: [],
-
-        accessory: null,
-        accessoryOptions: []
-
-    },
-
-
-    /* =====================================================
-       SEXY
-    ===================================================== */
-
-    sexy: {
-
-        label: "Sexy",
-
-        /* DEFAULT TOP */
-
-        top: {
-            name: "Sexy Top 5",
-            image: "fashion-assets/Sexy-top5.png"
-        },
-
-        /* RANDOM SEXY TOPS */
-
-        topOptions: [
-
-            {
-                name: "Sexy Top 5",
-                image: "fashion-assets/Sexy-top5.png"
-            },
-
-            {
-                name: "Sexy Top 6",
-                image: "fashion-assets/Sexy-top6.png"
-            },
-
-            {
-                name: "Sexy Top 7",
-                image: "fashion-assets/Sexy-top7.png"
-            },
-
-            {
-                name: "Sexy Top 8",
-                image: "fashion-assets/Sexy-top8.png"
-            },
-
-            {
-                name: "Sexy Top 9",
-                image: "fashion-assets/Sexy-top9.png"
-            }
-
-        ],
-
-        /* DEFAULT BOTTOM */
-
-        bottom: {
-            name: "Sexy Bottom 1",
-            image: "fashion-assets/Sexy-bottoms1.png"
-        },
-
-        /* RANDOM SEXY BOTTOMS */
-
-        bottomOptions: [
-
-            {
-                name: "Sexy Bottom 1",
-                image: "fashion-assets/Sexy-bottoms1.png"
-            },
-
-            {
-                name: "Sexy Bottom 2",
-                image: "fashion-assets/Sexy-bottoms2.png"
-            },
-
-            {
-                name: "Sexy Bottom 3",
-                image: "fashion-assets/Sexy-bottoms3.png"
-            },
-
-            {
-                name: "Sexy Bottom 4",
-                image: "fashion-assets/Sexy-bottoms4.png"
-            },
-
-            {
-                name: "Sexy Bottom 5",
-                image: "fashion-assets/Sexy-bottoms5.png"
-            },
-
-            {
-                name: "Sexy Bottom 6",
-                image: "fashion-assets/Sexy-bottoms6.png"
-            },
-
-            {
-                name: "Sexy Bottom 8",
-                image: "fashion-assets/Sexy-bottoms8.png"
-            }
-
-        ],
-
-        /* SHOES */
-
-        shoes: null,
-
-        shoeOptions: [],
-
-        /* ACCESSORIES */
-
-        accessory: null,
-
-        accessoryOptions: []
-
-    }
-
+    []
+  )
 };
-
-
-/* =========================================================
-   CURRENTLY SELECTED STYLE
-========================================================= */
 
 let selectedStyle = "bohemian";
 
-
-/* =========================================================
-   REMEMBER PREVIOUS RANDOM SELECTIONS
-========================================================= */
-
 const lastSelections = {};
 
-
-/* =========================================================
-   STYLE BUTTONS
-========================================================= */
-
 const styleButtons =
-    document.querySelectorAll(".style-buttons button");
-
-
-/* =========================================================
-   GENERATE BUTTON
-========================================================= */
+  document.querySelectorAll(".style-buttons button");
 
 const generateButton =
-    document.getElementById("generate-outfit");
-
-
-/* =========================================================
-   CLOTHING IMAGE LAYERS
-========================================================= */
+  document.getElementById("generate-outfit");
 
 const layers = {
-
-    top:
-        document.getElementById("fashion-top"),
-
-    bottom:
-        document.getElementById("fashion-bottom"),
-
-    shoes:
-        document.getElementById("fashion-shoes"),
-
-    accessory:
-        document.getElementById("fashion-accessory")
-
+  top: document.getElementById("fashion-top"),
+  bottom: document.getElementById("fashion-bottom"),
+  shoes: document.getElementById("fashion-shoes"),
+  accessory: document.getElementById("fashion-accessory")
 };
 
-
-/* =========================================================
-   RANDOM ITEM FUNCTION
-
-   Avoids choosing the same item twice in a row.
-========================================================= */
+const shopButtons = {
+  top: document.getElementById("shop-top"),
+  bottom: document.getElementById("shop-bottom")
+};
 
 function getRandomItem(style, type, items) {
+  if (!items || items.length === 0) {
+    return null;
+  }
 
-    if (!items || items.length === 0) {
-        return null;
-    }
+  if (items.length === 1) {
+    return items[0];
+  }
 
-    if (items.length === 1) {
-        return items[0];
-    }
+  const key = `${style}-${type}`;
 
-    const selectionKey =
-        `${style}-${type}`;
+  let index;
 
-    const previousIndex =
-        lastSelections[selectionKey];
+  do {
+    index = Math.floor(Math.random() * items.length);
+  } while (index === lastSelections[key]);
 
-    let randomIndex;
+  lastSelections[key] = index;
 
-    do {
-
-        randomIndex =
-            Math.floor(
-                Math.random() * items.length
-            );
-
-    } while (
-        randomIndex === previousIndex
-    );
-
-    lastSelections[selectionKey] =
-        randomIndex;
-
-    return items[randomIndex];
-
+  return items[index];
 }
-
-
-/* =========================================================
-   BUILD RANDOM LOOK
-========================================================= */
 
 function buildRandomLook(style) {
+  const base = fashionLooks[style];
 
-    const baseLook =
-        fashionLooks[style];
+  if (!base) {
+    return null;
+  }
 
-    if (!baseLook) {
-        return null;
-    }
+  return {
+    label: base.label,
 
-    const randomLook = {
+    top:
+      getRandomItem(
+        style,
+        "top",
+        base.topOptions
+      ) ?? base.top,
 
-        label:
-            baseLook.label,
+    bottom:
+      getRandomItem(
+        style,
+        "bottom",
+        base.bottomOptions
+      ) ?? base.bottom,
 
-        top:
-            baseLook.top,
+    shoes:
+      getRandomItem(
+        style,
+        "shoes",
+        base.shoeOptions
+      ) ?? base.shoes,
 
-        bottom:
-            baseLook.bottom,
-
-        shoes:
-            baseLook.shoes,
-
-        accessory:
-            baseLook.accessory
-
-    };
-
-
-    /* RANDOM TOP */
-
-    if (
-        baseLook.topOptions &&
-        baseLook.topOptions.length > 0
-    ) {
-
-        randomLook.top =
-            getRandomItem(
-                style,
-                "top",
-                baseLook.topOptions
-            );
-
-    }
-
-
-    /* RANDOM BOTTOM */
-
-    if (
-        baseLook.bottomOptions &&
-        baseLook.bottomOptions.length > 0
-    ) {
-
-        randomLook.bottom =
-            getRandomItem(
-                style,
-                "bottom",
-                baseLook.bottomOptions
-            );
-
-    }
-
-
-    /* RANDOM SHOES */
-
-    if (
-        baseLook.shoeOptions &&
-        baseLook.shoeOptions.length > 0
-    ) {
-
-        randomLook.shoes =
-            getRandomItem(
-                style,
-                "shoes",
-                baseLook.shoeOptions
-            );
-
-    }
-
-
-    /* RANDOM ACCESSORY */
-
-    if (
-        baseLook.accessoryOptions &&
-        baseLook.accessoryOptions.length > 0
-    ) {
-
-        randomLook.accessory =
-            getRandomItem(
-                style,
-                "accessory",
-                baseLook.accessoryOptions
-            );
-
-    }
-
-    return randomLook;
-
+    accessory:
+      getRandomItem(
+        style,
+        "accessory",
+        base.accessoryOptions
+      ) ?? base.accessory
+  };
 }
-
-
-/* =========================================================
-   SET CLOTHING IMAGE LAYER
-========================================================= */
 
 function setLayer(type, item) {
+  const image = layers[type];
 
-    const image =
-        layers[type];
+  if (!image) {
+    return;
+  }
 
-    if (!image) {
-        return;
-    }
+  if (!item || !item.image) {
+    image.hidden = true;
+    image.removeAttribute("src");
+    image.alt = "";
+    return;
+  }
 
-
-    /* HIDE EMPTY LAYER */
-
-    if (
-        !item ||
-        !item.image
-    ) {
-
-        image.hidden = true;
-
-        image.removeAttribute("src");
-
-        image.alt = "";
-
-        return;
-
-    }
-
-
-    /* LOAD CLOTHING IMAGE */
-
-    image.src =
-        item.image;
-
-    image.alt =
-        item.name || type;
-
-    image.hidden =
-        false;
-
+  image.src = item.image;
+  image.alt = item.name || type;
+  image.hidden = false;
 }
 
+function setText(id, value) {
+  const element = document.getElementById(id);
 
-/* =========================================================
-   UPDATE OUTFIT TEXT
-========================================================= */
+  if (element) {
+    element.textContent = value;
+  }
+}
 
 function updateText(look) {
+  setText(
+    "selected-style",
+    `${look.label} outfit selected.`
+  );
 
-    const selected =
-        document.getElementById(
-            "selected-style"
-        );
+  setText(
+    "outfit-top",
+    look.top?.name ?? "Coming soon"
+  );
 
-    const top =
-        document.getElementById(
-            "outfit-top"
-        );
+  setText(
+    "outfit-bottom",
+    look.bottom?.name ?? "Coming soon"
+  );
 
-    const bottom =
-        document.getElementById(
-            "outfit-bottom"
-        );
+  setText(
+    "outfit-shoes",
+    look.shoes?.name ?? "Coming soon"
+  );
 
-    const shoes =
-        document.getElementById(
-            "outfit-shoes"
-        );
-
-    const accessory =
-        document.getElementById(
-            "outfit-accessory"
-        );
-
-
-    if (selected) {
-
-        selected.textContent =
-            `${look.label} outfit selected.`;
-
-    }
-
-
-    if (top) {
-
-        top.textContent =
-            look.top?.name ||
-            "Coming soon";
-
-    }
-
-
-    if (bottom) {
-
-        bottom.textContent =
-            look.bottom?.name ||
-            "Coming soon";
-
-    }
-
-
-    if (shoes) {
-
-        shoes.textContent =
-            look.shoes?.name ||
-            "Coming soon";
-
-    }
-
-
-    if (accessory) {
-
-        accessory.textContent =
-            look.accessory?.name ||
-            "Coming soon";
-
-    }
-
+  setText(
+    "outfit-accessory",
+    look.accessory?.name ?? "Coming soon"
+  );
 }
 
+function updateShopButton(button, item) {
+  if (!button) {
+    return;
+  }
 
-/* =========================================================
-   SHOW RANDOM LOOK
-========================================================= */
-
-function showLook(style) {
-
-    const look =
-        buildRandomLook(style);
-
-    if (!look) {
-        return;
-    }
-   updateShopButtons(look);
-
-
-    /* BOTTOM */
-
-    setLayer(
-        "bottom",
-        look.bottom
-    );
-
-
-    /* TOP */
-
-    setLayer(
-        "top",
-        look.top
-    );
-
-
-    /* SHOES */
-
-    setLayer(
-        "shoes",
-        look.shoes
-    );
-
-
-    /* ACCESSORY */
-
-    setLayer(
-        "accessory",
-        look.accessory
-    );
-
-
-    updateText(look);
-
+  if (item?.link) {
+    button.href = item.link;
+    button.hidden = false;
+  } else {
+    button.removeAttribute("href");
+    button.hidden = true;
+  }
 }
-
-
-/* =========================================================
-   STYLE BUTTON EVENTS
-========================================================= */
-
-styleButtons.forEach(
-    (button) => {
-
-        button.addEventListener(
-            "click",
-            () => {
-
-                const style =
-                    button.dataset.style;
-
-
-                /* INVALID STYLE */
-
-                if (
-                    !style ||
-                    !fashionLooks[style]
-                ) {
-
-                    return;
-
-                }
-
-
-                /* SAVE CURRENT STYLE */
-
-                selectedStyle =
-                    style;
-
-
-                /* REMOVE OLD SELECTED CLASS */
-
-                styleButtons.forEach(
-                    (btn) => {
-
-                        btn.classList.remove(
-                            "selected"
-                        );
-
-                    }
-                );
-
-
-                /* SELECT CURRENT BUTTON */
-
-                button.classList.add(
-                    "selected"
-                );
-
-            }
-        );
-
-    }
-);
-
-
-/* =========================================================
-   GENERATE OUTFIT BUTTON
-========================================================= */
-
-if (generateButton) {
-
-    generateButton.addEventListener(
-        "click",
-        () => {
-
-            if (!selectedStyle) {
-                return;
-            }
-
-            showLook(
-                selectedStyle
-            );
-
-        }
-    );
-
-}
-
-
-/* =========================================================
-   INITIAL PAGE LOAD
-
-   Starts with a random Bohemian outfit.
-========================================================= */
-
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
-
-        const defaultButton =
-            document.querySelector(
-                '.style-buttons button[data-style="bohemian"]'
-            );
-
-
-        if (defaultButton) {
-
-            defaultButton.classList.add(
-                "selected"
-            );
-
-        }
-
-
-        showLook(
-            selectedStyle
-        );
-
-    }
-);
-/* =========================================================
-   AFFILIATE SHOP BUTTONS
-========================================================= */
-
-const shopTopButton = document.getElementById("shop-top");
-const shopBottomButton = document.getElementById("shop-bottom");
 
 function updateShopButtons(look) {
+  updateShopButton(
+    shopButtons.top,
+    look.top
+  );
 
-    if (look.top && look.top.link) {
-        shopTopButton.href = look.top.link;
-        shopTopButton.hidden = false;
-    } else {
-        shopTopButton.hidden = true;
-    }
-
-    if (look.bottom && look.bottom.link) {
-        shopBottomButton.href = look.bottom.link;
-        shopBottomButton.hidden = false;
-    } else {
-        shopBottomButton.hidden = true;
-    }
+  updateShopButton(
+    shopButtons.bottom,
+    look.bottom
+  );
 }
+
+function showLook(style) {
+  const look = buildRandomLook(style);
+
+  if (!look) {
+    return;
+  }
+
+  setLayer(
+    "bottom",
+    look.bottom
+  );
+
+  setLayer(
+    "top",
+    look.top
+  );
+
+  setLayer(
+    "shoes",
+    look.shoes
+  );
+
+  setLayer(
+    "accessory",
+    look.accessory
+  );
+
+  updateText(look);
+
+  updateShopButtons(look);
+}
+
+styleButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const style = button.dataset.style;
+
+    if (!style || !fashionLooks[style]) {
+      return;
+    }
+
+    selectedStyle = style;
+
+    styleButtons.forEach((item) => {
+      item.classList.remove("selected");
+    });
+
+    button.classList.add("selected");
+  });
+});
+
+generateButton?.addEventListener(
+  "click",
+  () => {
+    showLook(selectedStyle);
+  }
+);
+
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+    document
+      .querySelector(
+        `.style-buttons button[data-style="${selectedStyle}"]`
+      )
+      ?.classList.add("selected");
+
+    showLook(selectedStyle);
+  }
+);
