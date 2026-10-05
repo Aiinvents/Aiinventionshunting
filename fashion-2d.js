@@ -159,6 +159,26 @@ const fashionLooks = {
       {
         name: "Casual Shirt 3",
         image: "fashion-assets/Casual-shirt3.png"
+      },
+      {
+        name: "Casual Shirt 4",
+        image: "fashion-assets/Casual-shirt4.png"
+      },
+      {
+        name: "Casual Shirt 5",
+        image: "fashion-assets/Casual-shirt5.png"
+      },
+      {
+        name: "Casual Shirt 6",
+        image: "fashion-assets/Casual-shirt6.png"
+      },
+      {
+        name: "Casual Shirt 7",
+        image: "fashion-assets/Casual-shirt7.png"
+      },
+      {
+        name: "Casual Shirt 8",
+        image: "fashion-assets/Casual-shirt8.png"
       }
     ],
 
