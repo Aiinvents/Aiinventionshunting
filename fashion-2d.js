@@ -154,23 +154,28 @@ const fashionLooks = {
       },
       {
         name: "Casual Shirt 2",
-        image: "fashion-assets/Casual-shirt2.png"
+        image: "fashion-assets/Casual-shirt2.png",
+        link: "https://onelink.shein.com/55/63z67auq1hdv?ismg_ol=HeytqgPsXNu_01_KOC-C"
       },
       {
         name: "Casual Shirt 3",
-        image: "fashion-assets/Casual-shirt3.png"
+        image: "fashion-assets/Casual-shirt3.png",
+        link: "https://onelink.shein.com/55/647nklexahi9?ismg_ol=8Qcb5fLlDOt_01_KOC-C"
       },
       {
         name: "Casual Shirt 4",
-        image: "fashion-assets/Casual-shirt4.png"
+        image: "fashion-assets/Casual-shirt4.png",
+        link: "https://onelink.shein.com/55/647np18fexj6?ismg_ol=E9u5yM4En5a_01_KOC-C"
       },
       {
         name: "Casual Shirt 5",
-        image: "fashion-assets/Casual-shirt5.png"
+        image: "fashion-assets/Casual-shirt5.png",
+        link: "https://onelink.shein.com/55/647nuwcqjlzm?ismg_ol=6DjfZph1uA8_01_KOC-C"
       },
       {
         name: "Casual Shirt 6",
-        image: "fashion-assets/Casual-shirt6.png"
+        image: "fashion-assets/Casual-shirt6.png",
+        link: "https://onelink.shein.com/55/647o2apwo7ja?ismg_ol=FsargVONafy_01_KOC-C"
       },
       {
         name: "Casual Shirt 7",
