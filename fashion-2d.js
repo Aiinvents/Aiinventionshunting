@@ -150,7 +150,8 @@ const fashionLooks = {
     [
       {
         name: "Casual Shirt 1",
-        image: "fashion-assets/Casual-shirt1.png"
+        image: "fashion-assets/Casual-shirt1.png",
+        link: "https://onelink.shein.com/55/63z632xcenve?ismg_ol=JHRzohTtVEc_01_KOC-C"
       },
       {
         name: "Casual Shirt 2",
@@ -179,44 +180,75 @@ const fashionLooks = {
       },
       {
         name: "Casual Shirt 7",
-        image: "fashion-assets/Casual-shirt7.png"
+        image: "fashion-assets/Casual-shirt7.png",
+        link: "https://onelink.shein.com/55/647opbew22bi?ismg_ol=AvUgxSQiVqf_01_KOC-C"
       },
       {
         name: "Casual Shirt 8",
-        image: "fashion-assets/Casual-shirt8.png"
+        image: "fashion-assets/Casual-shirt8.png",
+        link: "https://onelink.shein.com/55/647oywparo0q?ismg_ol=ABcKWZjW6ec_01_KOC-C"
       }
     ],
 
     [
       {
         name: "Casual Shorts 1",
-        image: "fashion-assets/Casual-shorts1.png"
+        image: "fashion-assets/Casual-shorts1.png",
+        link: "https://onelink.shein.com/55/647p2ixc4h8w?ismg_ol=9zJg6FBwxqb_01_KOC-C"
       },
       {
         name: "Casual Shorts 2",
-        image: "fashion-assets/Casual-shorts2.png"
+        image: "fashion-assets/Casual-shorts2.png",
+        link: "https://onelink.shein.com/55/647p5rc5ttnk?ismg_ol=8fdAPA7lKZ6_01_KOC-C"
       },
       {
         name: "Casual Shorts 3",
-        image: "fashion-assets/Casual-shorts3.png"
+        image: "fashion-assets/Casual-shorts3.png",
+        link: "https://onelink.shein.com/55/647p8ttw3hoq?ismg_ol=C5FnlOJXK41_01_KOC-C"
       },
       {
         name: "Casual Shorts 4",
-        image: "fashion-assets/Casual-shorts4.png"
+        image: "fashion-assets/Casual-shorts4.png",
+        link: "https://onelink.shein.com/55/647pemz62pn6?ismg_ol=KC0QY25uo8e_01_KOC-C"
       },
       {
         name: "Casual Shorts 5",
-        image: "fashion-assets/Casual-shorts5.png"
+        image: "fashion-assets/Casual-shorts5.png",
+        link: "https://onelink.shein.com/55/647pj2so5r20?ismg_ol=GazdN22sXt2_01_KOC-C"
       },
       {
         name: "Casual Shorts 6",
-        image: "fashion-assets/Casual-shorts6.png"
+        image: "fashion-assets/Casual-shorts6.png",
+        link: "https://onelink.shein.com/55/647pwu1ffith?ismg_ol=FQfUjJDGXzO_01_KOC-C"
       },
       {
         name: "Casual Shorts 7",
-        image: "fashion-assets/Casual-shorts7.png"
+        image: "fashion-assets/Casual-shorts7.png",
+        link: "https://onelink.shein.com/55/647q2fakx4b3?ismg_ol=80PcJakQNsO_01_KOC-C"
+      },
+      {
+        name: "Casual Shorts 8",
+        image: "fashion-assets/Casual-shorts8.png",
+        link: "https://onelink.shein.com/55/647q4u3xutzn?ismg_ol=IBpq4Cwm79j_01_KOC-C"
+      },
+      {
+        name: "Casual Shorts 9",
+        image: "fashion-assets/Casual-shorts9.png",
+        link: "https://onelink.shein.com/55/647q7gtfbkm9?ismg_ol=LWcQ4MeS4yA_01_KOC-C"
+      },
+      {
+        name: "Casual Shorts 10",
+        image: "fashion-assets/Casual-shorts10.png",
+        link: "https://onelink.shein.com/55/647qa5hxsuua?ismg_ol=EKrQ1k4R8mU_01_KOC-C"
+      },
+      {
+        name: "Casual Shorts 11",
+        image: "fashion-assets/Casual-shorts11.png",
+        link: "https://onelink.shein.com/55/647qebgaf4vy?ismg_ol=2n4CGneoFJe_01_KOC-C"
       }
+          
     ],
+    
 
     [],
 
