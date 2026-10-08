@@ -643,8 +643,7 @@ const fashionLooks = {
     [
       {
         name: "Sexy Top 5",
-        image: "fashion-assets/Sexy-top5.png",
-        link: "
+        image: "fashion-assets/Sexy-top5.png"
       },
       {
         name: "Sexy Top 6",
