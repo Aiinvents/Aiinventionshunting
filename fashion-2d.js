@@ -67,7 +67,6 @@ const fashionLooks = {
         image: "fashion-assets/bohemian-top8.png",
         link: "https://onelink.shein.com/55/64edoclt26u5?ismg_ol=C0ZYYIgKFYs_01_KOC-C"
       },
-      {
     ],
 
     [
