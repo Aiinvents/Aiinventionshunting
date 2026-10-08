@@ -31,11 +31,13 @@ const fashionLooks = {
       },
       {
         name: "Bohemian Top 1",
-        image: "fashion-assets/bohemian-top1.png"
+        image: "fashion-assets/bohemian-top1.png",
+        link: "https://onelink.shein.com/55/64ectpnj1etb?ismg_ol=4ypS46WFSFG_01_KOC-C"
       },
       {
         name: "Bohemian Top 2",
-        image: "fashion-assets/bohemian-top2.png"
+        image: "fashion-assets/bohemian-top2.png",
+        link: "https://onelink.shein.com/55/64ecyp7cd7q4?ismg_ol=Bl3W5zdL2Fm_01_KOC-C"
       },
       {
         name: "Bohemian Top 3",
@@ -43,7 +45,8 @@ const fashionLooks = {
       },
       {
         name: "Bohemian Top 4",
-        image: "fashion-assets/bohemian-top4.png"
+        image: "fashion-assets/bohemian-top4.png",
+        link: "https://onelink.shein.com/55/64ed6bgmy16h?ismg_ol=3veHtuyzm5N_01_KOC-C"
       },
       {
         name: "Bohemian Top 5",
@@ -51,58 +54,62 @@ const fashionLooks = {
       },
       {
         name: "Bohemian Top 6",
-        image: "fashion-assets/bohemian-top6.png"
+        image: "fashion-assets/bohemian-top6.png",
+        link: "https://onelink.shein.com/55/64edkmfpccoh?ismg_ol=88pdmiQstrk_01_KOC-C"
       },
       {
         name: "Bohemian Top 7",
-        image: "fashion-assets/bohemian-top7.png"
+        image: "fashion-assets/bohemian-top7.png",
+        link: "https://onelink.shein.com/55/64edm9mmpzzo?ismg_ol=G6S2W5GjUnl_01_KOC-C"
       },
       {
         name: "Bohemian Top 8",
-        image: "fashion-assets/bohemian-top8.png"
+        image: "fashion-assets/bohemian-top8.png",
+        link: "https://onelink.shein.com/55/64edoclt26u5?ismg_ol=C0ZYYIgKFYs_01_KOC-C"
       },
       {
-        name: "Bohemian Top 9",
-        image: "fashion-assets/bohemian-top9.png"
-      },
-      {
-        name: "Bohemian Top 10",
-        image: "fashion-assets/bohemian-top10.png"
-      }
     ],
 
     [
       {
         name: "Bohemian Shorts",
-        image: "fashion-assets/bohemian_shorts.png"
+        image: "fashion-assets/bohemian_shorts.png",
+        link: "https://onelink.shein.com/55/64edtnzszigb?ismg_ol=1u8d8ygdTdV_01_KOC-C"
       },
       {
         name: "Bohemian Bottom 1",
-        image: "fashion-assets/boho-pants1.png"
+        image: "fashion-assets/boho-pants1.png",
+        link: "https://onelink.shein.com/55/64edx69s5mci?ismg_ol=1hZXusoOCbt_01_KOC-C"
       },
       {
         name: "Bohemian Bottom 2",
-        image: "fashion-assets/boho-pants2.png"
+        image: "fashion-assets/boho-pants2.png",
+        link: "https://onelink.shein.com/55/64ee0mkq92rl?ismg_ol=KYK9hq5WGk0_01_KOC-C"
       },
       {
         name: "Bohemian Bottom 3",
-        image: "fashion-assets/boho-pants3.png"
+        image: "fashion-assets/boho-pants3.png",
+        link: "https://onelink.shein.com/55/64ee2llub1wv?ismg_ol=6PhV8cOyVql_01_KOC-C"
       },
       {
         name: "Bohemian Bottom 4",
-        image: "fashion-assets/boho-pants4.png"
+        image: "fashion-assets/boho-pants4.png",
+        link: https://onelink.shein.com/55/64ee4yg65esm?ismg_ol=39DPcUTfhVS_01_KOC-C"
       },
       {
         name: "Bohemian Bottom 5",
-        image: "fashion-assets/boho-pants5.png"
+        image: "fashion-assets/boho-pants5.png",
+        link: "https://onelink.shein.com/55/64ee6vi95fs1?ismg_ol=2soUV9yygMV_01_KOC-C"
       },
       {
         name: "Bohemian Bottom 6",
-        image: "fashion-assets/boho-pants6.png"
+        image: "fashion-assets/boho-pants6.png",
+        link: "https://onelink.shein.com/55/64ee90gghh09?ismg_ol=62AZ6IopI8T_01_KOC-C"
       },
       {
         name: "Bohemian Bottom 7",
-        image: "fashion-assets/boho-pants7.png"
+        image: "fashion-assets/boho-pants7.png",
+        link: "https://onelink.shein.com/55/64eeb1glowob?ismg_ol=AgSS8PWZTf6_01_KOC-C"
       },
       {
         name: "Bohemian Bottom 8",
@@ -110,7 +117,8 @@ const fashionLooks = {
       },
       {
         name: "Bohemian Bottom 9",
-        image: "fashion-assets/boho-pants9.png"
+        image: "fashion-assets/boho-pants9.png",
+        link: "https://onelink.shein.com/55/64eedq545hl5?ismg_ol=9BYSG6QMIeR_01_KOC-C"
       }
     ],
 
@@ -261,71 +269,83 @@ const fashionLooks = {
     [
       {
         name: "Business Shirt 2",
-        image: "fashion-assets/business-shirt2.png"
+        image: "fashion-assets/business-shirt2.png",
+        link: "https://onelink.shein.com/55/64b65j8m8km7?ismg_ol=EHKhTQKQw6f_01_KOC-C"
       },
       {
         name: "Business Shirt 3",
-        image: "fashion-assets/business-shirt3.png"
+        image: "fashion-assets/business-shirt3.png",
+        link: "https://onelink.shein.com/55/64b66qnarvwv?ismg_ol=KNADmm96BAW_01_KOC-C"
       },
       {
         name: "Business Shirt 4",
-        image: "fashion-assets/business-shirt4.png"
+        image: "fashion-assets/business-shirt4.png",
+        link: "https://onelink.shein.com/55/64b69haucivj?ismg_ol=3MadJxEYqtd_01_KOC-C"
       },
       {
         name: "Business Shirt 5",
-        image: "fashion-assets/business-shirt5.png"
+        image: "fashion-assets/business-shirt5.png",
+        link: "https://onelink.shein.com/55/64e9ek530xg9?ismg_ol=82zF9rq50OH_01_KOC-C"
       },
       {
         name: "Business Shirt 6",
-        image: "fashion-assets/business-shirt6.png"
+        image: "fashion-assets/business-shirt6.png",
+        link: "https://onelink.shein.com/55/64ecc2bksg1a?ismg_ol=3GgFyWqpIFC_01_KOC-C"
       },
       {
         name: "Business Shirt 7",
-        image: "fashion-assets/business-shirt7.png"
+        image: "fashion-assets/business-shirt7.png",
+        link: "https://onelink.shein.com/55/64ece79s6l2c?ismg_ol=1y9xUqIEjMT_01_KOC-C"
       },
       {
         name: "Business Shirt 8",
-        image: "fashion-assets/business-shirt8.png"
+        image: "fashion-assets/business-shirt8.png",
+        link: "https://onelink.shein.com/55/64ecgm354ap6?ismg_ol=CTzTge2w775_01_KOC-C"
       }
     ],
 
     [
       {
         name: "Business Pant 1",
-        image: "fashion-assets/Business-pant1.png"
+        image: "fashion-assets/Business-pant1.png",
+        link: "https://onelink.shein.com/55/64b5bnwrwrvv?ismg_ol=6e0GWOnK7ox_01_KOC-C"
       },
       {
         name: "Business Pant 2",
-        image: "fashion-assets/Business-pant2.png"
+        image: "fashion-assets/Business-pant2.png",
+        link: "https://onelink.shein.com/55/64b5g5pb3va8?ismg_ol=JPhca6iKrRq_01_KOC-C"
       },
       {
         name: "Business Pant 3",
-        image: "fashion-assets/Business-pant3.png"
+        image: "fashion-assets/Business-pant3.png",
+        link: "https://onelink.shein.com/55/64b5jtwdoy7e?ismg_ol=8ZAXr3EZ6WN_01_KOC-C"
       },
       {
         name: "Business Pant 4",
-        image: "fashion-assets/Business-pant4.png"
+        image: "fashion-assets/Business-pant4.png",
+        link: "https://onelink.shein.com/55/64b5nm1ifc05?ismg_ol=KHkJ3BfJkFG_01_KOC-C"
       },
       {
         name: "Business Pant 5",
-        image: "fashion-assets/Business-pant5.png"
+        image: "fashion-assets/Business-pant5.png",
+        link: "https://onelink.shein.com/55/64b5rg5oda3y?ismg_ol=56Mo7CVT2Y8_01_KOC-C"
       },
       {
         name: "Business Pant 6",
-        image: "fashion-assets/Business-pant6.png"
+        image: "fashion-assets/Business-pant6.png",
+        link: "https://onelink.shein.com/55/64b5uineljjh?ismg_ol=EDqrAj8altl_01_KOC-C"
       },
       {
         name: "Business Pant 7",
-        image: "fashion-assets/Business-pant7.png"
+        image: "fashion-assets/Business-pant7.png",
+        link: "https://onelink.shein.com/55/64b5yasjdbw3?ismg_ol=7cwkAY62zcf_01_KOC-C"
       },
       {
         name: "Business Pant 8",
-        image: "fashion-assets/Business-pant8.png"
+        image: "fashion-assets/Business-pant8.png",
+        link: "https://onelink.shein.com/55/64b5yolr5ppb?ismg_ol=LC6Yon8uJ0j_01_KOC-C"
       },
       {
-        name: "Business Pant 9",
-        image: "fashion-assets/Business-pant9.png"
-      }
     ],
 
     [],
@@ -624,7 +644,8 @@ const fashionLooks = {
     [
       {
         name: "Sexy Top 5",
-        image: "fashion-assets/Sexy-top5.png"
+        image: "fashion-assets/Sexy-top5.png",
+        link: "
       },
       {
         name: "Sexy Top 6",
