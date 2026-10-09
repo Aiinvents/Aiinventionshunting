@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://fashion-outfit-generator.netlify.app/sitemap.xml
