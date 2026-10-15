@@ -267,8 +267,17 @@ const fashionLooks = {
         name: "Casual Shorts 11",
         image: "fashion-assets/Casual-shorts11.png",
         link: "https://onelink.shein.com/55/647qebgaf4vy?ismg_ol=2n4CGneoFJe_01_KOC-C"
+      },
+      {
+        name: "Casual shorts 12",
+        image: "fashion-assets/casual-shorts12.webp",
+        link: "https://onelink.shein.com/57/65664mxqszf1?ismg_ol=1Z3ql17M072_01_KOC-C"
+      },
+      {
+        name: "Casual Shorts 13",
+        image: "fashion-assets/casual-shorts13.webp",
+        link: " https://onelink.shein.com/57/6566ak12y7fw?ismg_ol=AeD35qbtUwe_01_KOC-C"
       }
-          
     ],
     
 
