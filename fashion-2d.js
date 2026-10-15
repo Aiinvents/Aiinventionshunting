@@ -194,6 +194,21 @@ const fashionLooks = {
         name: "Casual Shirt 8",
         image: "fashion-assets/Casual-shirt8.png",
         link: "https://onelink.shein.com/55/647oywparo0q?ismg_ol=ABcKWZjW6ec_01_KOC-C"
+      },
+      {
+        name:"Casual shirt 9",
+        image: "casual-shirt9.webp",
+        link: "https://onelink.shein.com/57/655t6fwuq9fk?ismg_ol=9fUL1uAXcG8_01_KOC-C"
+      },
+      {
+        name: "Casual shirt 10",
+        image: "casual-shirt10.webp",
+        link: "https://onelink.shein.com/57/655tcixa7nel?ismg_ol=GWF5OXyk9YP_01_KOC-C"
+      },
+      {
+        name: "Casual shirt 11",
+        image: "casual-shirt11.webp",
+        link: "https://onelink.shein.com/57/655tkowt4kyj?ismg_ol=2QC86r1aOCp_01_KOC-C"
       }
     ],
 
