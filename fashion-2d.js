@@ -502,7 +502,49 @@ const fashionLooks = {
       }
     ],
 
-    [],
+    [
+      {
+        name: "Barbie Shoes 1",
+        image: "fashion-assets/barbie-shoes1.webp",
+        link: "https://onelink.shein.com/57/657s7g0rm5hx?ismg_ol=BOhnGMxr0ny_01_KOC-C"
+      },
+      {
+        name: "Barbie Shoes 2",
+        image: "fashion-assets/barbie-shoes2.webp",
+        link: "https://onelink.shein.com/57/657shozjoewr?ismg_ol=JmFU4lIW5da_01_KOC-C"
+      },
+      {
+        name: "Barbie Shoes 3",
+        image: "fashion-assets/barbie-shoes3.webp",
+        link: "https://onelink.shein.com/57/657swnmzfe3s?ismg_ol=4x3L3LqdoFT_01_KOC-C"
+      },
+      {
+        name: "Barbie Shoes 4",
+        image: "fashion-assets/barbie-shoes4.webp",
+        link: "https://onelink.shein.com/57/657t7m95yd79?ismg_ol=ALx4Se57Z84_01_KOC-C"
+      },
+      {
+        name: "Barbie Shoes 5",
+        image "fashion-assets/barbie-shoes5.webp",
+        link: "https://onelink.shein.com/57/657t34gmp5wy?ismg_ol=K86sEgLlniO_01_KOC-C"
+      },
+      {
+        name: "Barbie Shoes 6",
+        image: "fashion-assets/barbie-shoes6.webp",
+        link: "https://onelink.shein.com/57/657thr9vsil4?ismg_ol=4KZB1Ev0FRW_01_KOC-C"
+      },
+      {
+        name: "Barbie Shoes 7",
+        image: "fashion-assets/barbie-shoes7.webp",
+        link: "https://onelink.shein.com/57/657tlz792p2x?ismg_ol=HMa953KLxNV_01_KOC-C"
+      },
+      {
+        name: "Barbie Shoes 8",
+        image: "fashion-assets/barbie-shoes8.webp",
+        link: "https://onelink.shein.com/57/657tpz8iap8f?ismg_ol=BtMXdxgeinG_01_KOC-C"
+      }
+                   
+    ],
 
     []
   ),
