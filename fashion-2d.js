@@ -543,8 +543,8 @@ const fashionLooks = {
         image: "fashion-assets/barbie-shoes8.webp",
         link: "https://onelink.shein.com/57/657tpz8iap8f?ismg_ol=BtMXdxgeinG_01_KOC-C"
       }
-                   
-    ],
+    ]
+  ],
 
     []
   ),
