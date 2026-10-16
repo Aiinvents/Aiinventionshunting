@@ -818,6 +818,7 @@ const shopButtons = {
   bottom: document.getElementById("shop-bottom"),
   shoes: document.getElementById("shop-shoes")
 };
+const mainShopButton = document.getElementById("buy_now");
 
 function getRandomItem(style, type, items) {
   if (!items || items.length === 0) {
