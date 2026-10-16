@@ -954,6 +954,18 @@ function updateShopButtons(look) {
   updateShopButton(shopButtons.top, look.top);
   updateShopButton(shopButtons.bottom, look.bottom);
   updateShopButton(shopButtons.shoes, look.shoes);
+
+  const product = [
+    look.top,
+    look.bottom,
+    look.shoes
+  ].find(item => item?.link);
+
+  updateShopButton(mainShopButton, product);
+
+  if (product && mainShopButton) {
+    mainShopButton.textContent = `Shop ${product.name}`;
+  }
 }
 
 function showLook(style) {
