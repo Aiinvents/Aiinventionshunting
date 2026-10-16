@@ -545,7 +545,39 @@ const fashionLooks = {
       }
   ],
 
-    []
+    [
+      {
+        name: "Barbie Purse 1",
+        image: "fashion-assets/barbie-purse1.webp",
+        link: "https://onelink.shein.com/57/659apkb52jjh?ismg_ol=IgeHxe1qCv3_01_KOC-C"
+      },
+      {
+        name: "Barbie Purse 2",
+        image: "fashion-assets/barbie-purse2.webp",
+        link: "https://onelink.shein.com/57/659axaiktiqf?ismg_ol=3Jjb1s42rfs_01_KOC-C"
+      },
+      {
+        name: "Barbie Purse 3",
+        image: "fashion-assets/barbie-purse3.webp",
+        link: "https://onelink.shein.com/57/659b37lx05g4?ismg_ol=CXJChewolUg_01_KOC-C"
+      },
+      {
+        name: "Barbie Purse 4",
+        image: "fashion-assets/barbie-purse4.webp",
+        link: "https://onelink.shein.com/57/659b8b3sh95r?ismg_ol=I5nY9Eo9LCa_01_KOC-C"
+      },
+      {
+        name: "Barbie Purse 5",
+        image: "fashion-assets/barbie-purse5.webp",
+        link: "https://onelink.shein.com/57/659bfjjuyg6r?ismg_ol=99xZh7yyG4p_01_KOC-C"
+      },
+      {
+        name: "Barbie Purse 6",
+        image: "fashion-assets/barbie-purse6.webp",
+        link:":https://onelink.shein.com/57/659bnthggu7q?ismg_ol=8cLeKePMWYp_01_KOC-C"
+      }  
+        
+    ]
   ),
 
   punk: createStyle(
