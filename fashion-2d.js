@@ -525,7 +525,7 @@ const fashionLooks = {
       },
       {
         name: "Barbie Shoes 5",
-        image "fashion-assets/barbie-shoes5.webp",
+        image: "fashion-assets/barbie-shoes5.webp",
         link: "https://onelink.shein.com/57/657t34gmp5wy?ismg_ol=K86sEgLlniO_01_KOC-C"
       },
       {
@@ -543,7 +543,6 @@ const fashionLooks = {
         image: "fashion-assets/barbie-shoes8.webp",
         link: "https://onelink.shein.com/57/657tpz8iap8f?ismg_ol=BtMXdxgeinG_01_KOC-C"
       }
-    ]
   ],
 
     []
