@@ -783,7 +783,8 @@ const layers = {
 
 const shopButtons = {
   top: document.getElementById("shop-top"),
-  bottom: document.getElementById("shop-bottom")
+  bottom: document.getElementById("shop-bottom"),
+  shoes: document.getElementById("shop-shoes")
 };
 
 function getRandomItem(style, type, items) {
@@ -917,15 +918,9 @@ function updateShopButton(button, item) {
 }
 
 function updateShopButtons(look) {
-  updateShopButton(
-    shopButtons.top,
-    look.top
-  );
-
-  updateShopButton(
-    shopButtons.bottom,
-    look.bottom
-  );
+  updateShopButton(shopButtons.top, look.top);
+  updateShopButton(shopButtons.bottom, look.bottom);
+  updateShopButton(shopButtons.shoes, look.shoes);
 }
 
 function showLook(style) {
