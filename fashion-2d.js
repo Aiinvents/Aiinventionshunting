@@ -400,7 +400,53 @@ const fashionLooks = {
       },
     ],
 
-    [],
+    [
+      {
+        name: "Business Shoes 1",
+        image: "fashion-assets/bus-shoes1.webp",
+        link: "https://onelink.shein.com/57/65euiz7mpz66?ismg_ol=GQMYKH6nKFh_01_KOC-C"
+      },
+      {
+        name: "Business Shoes 2",
+        image: "fashion-assets/bus-shoes2.webp",
+        link: "https://onelink.shein.com/57/65eu98051jy2?ismg_ol=5vsVlY5UhPG_01_KOC-C"
+      },
+      {
+        name: "Business Shoes 3",
+        image: "fashion-assets/bus-shoes3.webp",
+        link: "https://onelink.shein.com/57/65eualbwuxat?ismg_ol=Cdp1RO5EQql_01_KOC-C"
+      },
+      {
+        name: "Business Shoes 4",
+        image: "fashion-assets/bus-shoes4.webp",
+        link: "https://onelink.shein.com/57/65eubupm2ud2?ismg_ol=ABn7DXBjzN9_01_KOC-C"
+      },
+      {
+        name: "Business Shoes 5",
+        image: "fashion-assets/bus-shoes5.webp",
+        link: "https://onelink.shein.com/57/65eucy65u1iu?ismg_ol=CoAazlAqj6N_01_KOC-C"
+      },
+      {
+        name: "Business Shoes 6",
+        image: "fashion-assets/bus-shoes6.webp",
+        link: "https://onelink.shein.com/57/65eue7jvfay0?ismg_ol=2YEfGBxxHfo_01_KOC-C"
+      },
+      {
+        name: "Business Shoes 7",
+        image: "fashion-assets/bus-shoes7.webp",
+        link: "https://onelink.shein.com/57/65eufeymeeqx?ismg_ol=93MXp4Jz94n_01_KOC-C"
+      },
+      {
+        name: "Business Shoes 8",
+        image: "fashion-assets/bus-shoes8.webp",
+        link: "https://onelink.shein.com/57/65euggg7jgag?ismg_ol=7ktUAvBk0S3_01_KOC-C"
+      },
+      {
+        name: "Business Shoes 9",
+        image: "fashion-assets/bus-shoes9.webp",
+        link: "https://onelink.shein.com/57/65euhfyp2jhp?ismg_ol=5uywTwXCM2N_01_KOC-C"
+      }
+    ],
 
     []
   ),
