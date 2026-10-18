@@ -324,7 +324,37 @@ const fashionLooks = {
         name: "Business Shirt 8",
         image: "fashion-assets/business-shirt8.png",
         link: "https://onelink.shein.com/55/64ecgm354ap6?ismg_ol=CTzTge2w775_01_KOC-C"
-      }
+      },
+      {
+        name: "Business Shirt 9",
+        image: "fashion-assets/business-shirt9.webp",
+        link: "https://onelink.shein.com/57/65elshoash7f?ismg_ol=78qfopNNVBY_01_KOC-C"
+      },
+      {
+        name: "Business Shirt 10",
+        image: "fashion-assets/business-shirt10.webp",
+        link: "https://onelink.shein.com/57/65ely0ycas0q?ismg_ol=CCGj0Aq9Ec8_01_KOC-C"
+      },
+      {
+        name: "Business Shirt 11",
+        image: "fashion-assets/business-shirt11.webp",
+        link: "https://onelink.shein.com/57/65em2esw740y?ismg_ol=DbISxMO9FSB_01_KOC-C"
+      },
+      {
+        name: "Business Shirt 12",
+        image: "fashion-assets/business-shirt12.webp",
+        link: "https://onelink.shein.com/57/65em85z5064t?ismg_ol=HC125sfcgYs_01_KOC-C"
+      },
+      {
+        name: "Business Shirt 13",
+        image: "fashion-assets/business-shirt13.webp",
+        link: "https://onelink.shein.com/57/65emd9h0h9x2?ismg_ol=FSIhCBzNMAp_01_KOC-C"
+      },
+      {
+        name: "Business Shirt 14",
+        image: "fashion-assets/business-shirt14.webp",
+        link: "https://onelink.shein.com/57/65eml7khtxlr?ismg_ol=9bAkRvWXzmR_01_KOC-C"
+      },
     ],
 
     [
