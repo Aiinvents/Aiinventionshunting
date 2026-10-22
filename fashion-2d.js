@@ -523,57 +523,57 @@ const fashionLooks = {
     [
       {
         name: "Barbie Bottom 1",
-        image: "fashion-assets/Barbie-bottoms1.png",
+        image: "fashion-assets/Barbie-bottoms1.webp",
         link: "https://onelink.shein.com/55/63sabvnqjzia?ismg_ol=BjWYWTPj4j2_01_KOC-C"
       },
       {
         name: "Barbie Bottom 2",
-        image: "fashion-assets/Barbie-bottoms2.png",
+        image: "fashion-assets/Barbie-bottoms2.webp",
         link: "https://onelink.shein.com/55/63saew6fsen1?ismg_ol=GFrEMPWdUmZ_01_KOC-C"
       },
       {
         name: "Barbie Bottom 3",
-        image: "fashion-assets/Barbie-bottoms3.png",
+        image: "fashion-assets/Barbie-bottoms3.webp",
         link: "https://onelink.shein.com/55/63sagv7js9vv?ismg_ol=5lTV0ipOFoz_01_KOC-C"
       },
       {
         name: "Barbie Bottom 4",
-        image: "fashion-assets/Barbie-bottoms4.png",
+        image: "fashion-assets/Barbie-bottoms4.webp",
         link: "https://onelink.shein.com/55/63sasz9dqia3?ismg_ol=5P92603DuYI_01_KOC-C"
       },
       {
         name: "Barbie Bottom 5",
-        image: "fashion-assets/Barbie-bottoms5.png",
+        image: "fashion-assets/Barbie-bottoms5.webp",
         link: "https://onelink.shein.com/55/63savi0sxqgw?ismg_ol=LVeoMHeAmBu_01_KOC-C"
       },
       {
         name: "Barbie Bottom 6",
-        image: "fashion-assets/Barbie-bottoms6.png",
+        image: "fashion-assets/Barbie-bottoms6.webp",
         link: "https://onelink.shein.com/55/63sax19o15xj?ismg_ol=5yG2VX619fg_01_KOC-C"
       },
       {
         name: "Barbie Bottom 7",
-        image: "fashion-assets/Barbie-bottoms7.png",
+        image: "fashion-assets/Barbie-bottoms7.webp",
         link: "https://onelink.shein.com/55/63say6pbebeh?ismg_ol=1BIh59M2MwA_01_KOC-C"
       },
       {
         name: "Barbie Bottom 8",
-        image: "fashion-assets/Barbie-bottoms8.png",
+        image: "fashion-assets/Barbie-bottoms8.webp",
         link: "https://onelink.shein.com/55/63saztw8rypu?ismg_ol=Ir9WtP0b3ax_01_KOC-C"
       },
       {
         name: "Barbie Bottom 9",
-        image: "fashion-assets/Barbie-bottoms9.png",
+        image: "fashion-assets/Barbie-bottoms9.webp",
         link: "https://onelink.shein.com/55/63sb43snk8rj?ismg_ol=B5w92EyU464_01_KOC-C"
       },
       {
         name: "Barbie Bottom 10",
-        image: "fashion-assets/Barbie-bottoms10.png",
+        image: "fashion-assets/Barbie-bottoms10.webp",
         link: "https://onelink.shein.com/55/63sb5sym3cis?ismg_ol=C0u4d1q0xgX_01_KOC-C"
       },
       {
         name: "Barbie Bottom 11",
-        image: "fashion-assets/Barbie-bottoms11.png",
+        image: "fashion-assets/Barbie-bottoms11.webp",
         link: "https://onelink.shein.com/55/63sb72cbpb7l?ismg_ol=I4sGE4l9w9M_01_KOC-C"
       }
     ],
