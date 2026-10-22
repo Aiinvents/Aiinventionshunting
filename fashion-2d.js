@@ -92,7 +92,7 @@ const fashionLooks = {
       },
       {
         name: "Bohemian Bottom 5",
-        image: "fashion-assets/boho-pants5.png",
+        image: "fashion-assets/boho-pants5.webp",
         link: "https://onelink.shein.com/55/64ee6vi95fs1?ismg_ol=2soUV9yygMV_01_KOC-C"
       },
       {
