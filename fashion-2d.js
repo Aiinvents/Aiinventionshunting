@@ -460,7 +460,7 @@ const fashionLooks = {
     [
       {
         name: "Barbie Top 1",
-        image: "fashion-assets/Barbie-top1.png",
+        image: "fashion-assets/Barbie-top1.webp",
         link: "https://onelink.shein.com/55/63p6p9flwttv?ismg_ol=5DbZ209XL1O_01_KOC-C"
       },
       {
