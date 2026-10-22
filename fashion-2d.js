@@ -31,7 +31,7 @@ const fashionLooks = {
       },
       {
         name: "Bohemian Top 1",
-        image: "fashion-assets/bohemian-top1.png",
+        image: "fashion-assets/bohemian-top1.webp",
         link: "https://onelink.shein.com/55/64ectpnj1etb?ismg_ol=4ypS46WFSFG_01_KOC-C"
       },
       {
