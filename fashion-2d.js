@@ -71,11 +71,6 @@ const fashionLooks = {
 
     [
       {
-        name: "Bohemian Shorts",
-        image: "fashion-assets/bohemian_shorts.png",
-        link: "https://onelink.shein.com/55/64edtnzszigb?ismg_ol=1u8d8ygdTdV_01_KOC-C"
-      },
-      {
         name: "Bohemian Bottom 1",
         image: "fashion-assets/boho-pants1.png",
         link: "https://onelink.shein.com/55/64edx69s5mci?ismg_ol=1hZXusoOCbt_01_KOC-C"
