@@ -125,7 +125,7 @@ const fashionLooks = {
       },
       {
         name: "Bohemian Accessory 2",
-        image: "fashion-assets/boho-accessories1.png"
+        image: "fashion-assets/boho-accessories1.webp"
       },
       {
         name: "Bohemian Accessory 3",
